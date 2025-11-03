@@ -1,0 +1,15 @@
+@import url("normalize.css");
+/* 1️⃣ Base styles — variables, resets, typography */
+@import url("base.css");
+
+/* 2️⃣ Utilities — reusable helpers, buttons, cards, spacing */
+@import url("utilities.css");
+
+/* 3️⃣ Layout — structure, header, footer, section spacing */
+@import url("layout.css");
+
+/* 4️⃣ Components — hero, info, cards, testimonials, visuals */
+@import url("components.css");
+
+/* 5️⃣ Responsive — mobile, tablet, small desktop breakpoints */
+@import url("responsive.css");

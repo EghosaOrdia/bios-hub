@@ -1,0 +1,218 @@
+/* =========================================================
+   LAYOUT.CSS
+   Structure, header, nav, sections, and footer
+   ========================================================= */
+
+/* =========================================================
+   HEADER & NAVIGATION
+   ========================================================= */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.5rem 3rem;
+  background: rgba(17, 24, 39, 0.95);
+  border-bottom: 1px solid var(--color-border);
+  backdrop-filter: blur(6px);
+  transition: background var(--transition-slow);
+}
+
+/* Logo */
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo__img {
+  width: 28px;
+  height: 28px;
+}
+
+.logo__text {
+  font-size: 1.2rem;
+  font-weight: var(--weight-bold);
+  color: var(--color-foreground);
+}
+
+/* Search */
+.search {
+  flex: 1;
+  border: 1px solid var(--color-muted-foreground);
+  border-radius: var(--radius-lg);
+  padding: 0.6rem 1.2rem;
+  display: flex;
+}
+
+.search__input {
+  flex: 1;
+  padding: 0.3rem;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: var(--color-foreground);
+}
+
+.search--btn {
+  float: right;
+}
+
+/* Nav */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav__link {
+  color: var(--color-foreground);
+  padding: 0.8rem 1rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid transparent;
+  transition: all var(--transition-fast);
+}
+.nav__link.active {
+  border-bottom: 4px solid var(--color-primary);
+}
+
+.nav__link:hover {
+  border-color: var(--color-primary);
+  /* color: var(--color-primary); */
+}
+
+.nav__link--cta {
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  font-weight: var(--weight-semibold);
+}
+
+.nav__link--cta:hover {
+  box-shadow: 0 0 12px var(--color-primary-glow);
+  transform: translateY(-1px);
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+}
+
+.menu-toggle span {
+  width: 100%;
+  height: 3px;
+  background: var(--color-foreground);
+  border-radius: 2px;
+  transition: all var(--transition-fast);
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* =========================================================
+   SECTIONS & MAIN
+   ========================================================= */
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.section {
+  padding: var(--section-padding);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.section--alt {
+  background: var(--color-secondary);
+  box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.03);
+}
+
+.section__header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.section__title {
+  font-size: 2.4rem;
+  color: var(--color-foreground);
+}
+
+.section__description {
+  font-size: 1rem;
+  color: var(--color-muted-foreground);
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Section Lists */
+.section__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+}
+
+.section__list--grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.section__list--grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem;
+  background: var(--color-bg-alt);
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+  color: var(--color-muted-foreground);
+  font-size: 0.9rem;
+}
+
+.footer__text {
+  opacity: 0.8;
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BIOS Hub</title>
+
+    <meta
+      name="description"
+      content="Download verified BIOS BIN files easily. Fast, reliable, and regularly updated data — no hassle, no hidden steps."
+    />
+    <meta property="og:site_name" content="BIOS Hub" />
+    <meta
+      property="og:description"
+      content="Download verified BIOS BIN files easily. Fast, reliable, and regularly updated data — no hassle, no hidden steps."
+    />
+    <meta property="og:url" content="https://www.bioshub.net" />
+    <meta property="og:type" content="website" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <!-- Scripts -->
+    <script defer src="scripts/main.js"></script>
+  </head>
+  <body>
+    <div class="overlay"></div>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+      <div class="header__logo">
+        <a href="#" class="logo__link">
+          <img
+            src="images/logo-dark.svg"
+            alt="BIOS Hub logo"
+            class="logo__img"
+          />
+        </a>
+        <span class="logo__text">BIOS Hub</span>
+      </div>
+
+      <button
+        id="menuToggle"
+        class="menu-toggle"
+        aria-label="Toggle navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="menuNav" class="nav">
+        <a href="browse.html" class="nav__link">Browse</a>
+        <a href="#" class="nav__link">Docs</a>
+        <a href="#" class="nav__link">Community</a>
+        <a href="#" class="nav__link">Sign in</a>
+        <a href="#" class="nav__link nav__link--cta">Open App</a>
+      </nav>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main class="main">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero__text">
+          <h1 class="hero__title">
+            Find and Share BIOS BIN Files with Trust Built In
+          </h1>
+          <p class="hero__subtitle">
+            A community-driven library for motherboard and OEM BIOS files.
+            Verified hashes, transparent ratings, and real user comments help
+            you flash with confidence.
+          </p>
+        </div>
+
+        <div class="hero__actions">
+          <a href="browse.html" class="button button--primary"
+            >Start Browsing</a
+          >
+          <button class="button button--secondary">Upload a File</button>
+        </div>
+
+        <div class="info">
+          <div class="info__item">
+            <img
+              src="images/shield-dark.svg"
+              alt="shield icon"
+              class="info__icon"
+            />
+            <span>12k verified files</span>
+          </div>
+          <div class="info__item">
+            <img
+              src="images/star-dark.svg"
+              alt="star icon"
+              class="info__icon"
+            />
+            <span>95k+ ratings</span>
+          </div>
+          <div class="info__item">
+            <img
+              src="images/people-dark.svg"
+              alt="people icon"
+              class="info__icon"
+            />
+            <span>38k contributors</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why BIOS Hub -->
+      <section class="section section--alt section--why">
+        <div class="section__header">
+          <h2 class="section__title">Why BIOS Hub</h2>
+          <p class="section__description">
+            Everything you need to evaluate BIOS reliability at a glance:
+            verified checksums, version history, and crowdsourced feedback.
+          </p>
+        </div>
+
+        <div class="section__list">
+          <article class="card">
+            <div class="card__header">
+              <img
+                src="images/verified-dark.svg"
+                alt="verified icon"
+                class="card__icon"
+              />
+              <h3 class="card__title">Verified Integrity</h3>
+            </div>
+            <p class="card__text">
+              Each upload displays SHA256 and file size so you can validate
+              before flashing.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card__header">
+              <img
+                src="images/comment-dark.svg"
+                alt="comment icon"
+                class="card__icon"
+              />
+              <h3 class="card__title">Community Insights</h3>
+            </div>
+            <p class="card__text">
+              Real-world results from users on stability, detection, and memory
+              training.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card__header">
+              <img
+                src="images/star-dark.svg"
+                alt="rating icon"
+                class="card__icon"
+              />
+              <h3 class="card__title">Transparent Ratings</h3>
+            </div>
+            <p class="card__text">
+              Weighted scores highlight reliability across versions and boards.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- How it works -->
+      <section class="section section--alt section--how">
+        <div class="section__header">
+          <h2 class="section__title">How it Works</h2>
+          <p class="section__description">
+            Simple flow to get you from search to safe flash.
+          </p>
+        </div>
+
+        <div class="section__list section__list--grid">
+          <article class="card card--step">
+            <span class="card__step-num">1</span>
+            <div class="card__body">
+              <h3 class="card__title">Search your board</h3>
+              <p class="card__text">Filter by brand, model or chipset.</p>
+            </div>
+          </article>
+
+          <article class="card card--step">
+            <span class="card__step-num">2</span>
+            <div class="card__body">
+              <h3 class="card__title">Check reputation</h3>
+              <p class="card__text">
+                See ratings, hashes and top comments instantly.
+              </p>
+            </div>
+          </article>
+
+          <article class="card card--step">
+            <span class="card__step-num">3</span>
+            <div class="card__body">
+              <h3 class="card__title">Download safely</h3>
+              <p class="card__text">
+                Weighted scores highlight reliability across versions and
+                boards.
+              </p>
+            </div>
+          </article>
+
+          <article class="card card--step">
+            <span class="card__step-num">4</span>
+            <div class="card__body">
+              <h3 class="card__title">Give back</h3>
+              <p class="card__text">Rate and comment to help others.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Made for builders -->
+      <section class="section section--alt section--made">
+        <div class="section__header">
+          <h2 class="section__title">Made for Builders, IT & Repair Pros</h2>
+          <p class="section__description">
+            From gaming rigs to fleet laptops — find proven BIOS versions that
+            just work.
+          </p>
+        </div>
+
+        <div class="section__list section__list--grid">
+          <article class="card">
+            <h3 class="card__title">Browse Library</h3>
+            <p class="card__text">
+              Filter by brand, chipset, and release date.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Check Reputation</h3>
+            <p class="card__text">Ratings, comments, and version history.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section section--alt section--testimonials">
+        <div class="section__header">
+          <h2 class="section__title">Trusted by the Community</h2>
+          <p class="section__description">Real feedback from real flashes.</p>
+        </div>
+
+        <div class="section__list section__list--grid-3">
+          <article class="card card--testimonial">
+            <div class="card__header">
+              <span class="card__step-num">1</span>
+              <h3 class="card__title">Mia T.</h3>
+            </div>
+            <p class="card__text">
+              “Rock solid. Hashes match and memory stability improved on Z790.”
+            </p>
+          </article>
+
+          <article class="card card--testimonial">
+            <div class="card__header">
+              <span class="card__step-num">2</span>
+              <h3 class="card__title">Elena P.</h3>
+            </div>
+            <p class="card__text">
+              “Ratings, hashes, and top comments instantly accessible.”
+            </p>
+          </article>
+
+          <article class="card card--testimonial">
+            <div class="card__header">
+              <span class="card__step-num">3</span>
+              <h3 class="card__title">Dan R.</h3>
+            </div>
+            <p class="card__text">
+              “Weighted scores highlight reliability across versions and
+              boards.”
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">© 2025 BIOS Hub. All rights reserved.</p>
+      <nav class="footer--nav">
+        <a class="nav__link">Privacy</a>
+        <a class="nav__link">Terms</a>
+        <a class="nav__link">Contact</a>
+      </nav>
+    </footer>
+  </body>
+</html>
