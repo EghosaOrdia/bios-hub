@@ -93,7 +93,8 @@
 .section--why,
 .section--how,
 .section--made,
-.section--testimonials {
+.section--testimonials,
+.section--cta {
   scroll-margin-top: 100px;
 }
 
@@ -189,6 +190,88 @@
   font-style: italic;
   margin-top: 0.6rem;
   line-height: 1.6;
+}
+
+/* Section CTA */
+.section__cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-accent);
+}
+
+/* =========================================================
+   PAGE: BROWSE
+   ========================================================= */
+/* Main */
+.browse--main {
+  flex-direction: row;
+  padding: 6rem 2rem 4rem;
+}
+
+.browse__section {
+
+}
+
+/* Aside */
+.aside-browse {
+  width: 30%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.aside-card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-card);
+  padding: 1.5rem;
+  transition: all var(--transition-fast);
+}
+
+.aside__h2 {
+  font-weight: var(--weight-semibold);
+  color: var(--color-sidebar-foreground);
+}
+
+.aside-card__h3 {
+  color: var(--color-muted-foreground);
+  font-weight: var(--weight-normal);
+  font-size: 0.9rem;
+}
+
+.aside-card__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 16px;
+}
+.aside-card__list--column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.aside-card-list__item {
+  background-color: var(--color-secondary);
+  padding: 8px 12px;
+  border-radius: var(--radius-md);
+  font-size: 0.8rem;
+}
+
+.button--alt.active {
+  background-color: var(--color-primary);
+}
+.button--alt:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.browse-section {
+  flex: 1;
+  padding: 1.5rem;
 }
 
 /* =========================================================

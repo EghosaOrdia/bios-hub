@@ -61,7 +61,7 @@
   color: var(--color-foreground);
 }
 
-.search--btn {
+.search__btn {
   float: right;
 }
 
@@ -85,7 +85,6 @@
 
 .nav__link:hover {
   border-color: var(--color-primary);
-  /* color: var(--color-primary); */
 }
 
 .nav__link--cta {

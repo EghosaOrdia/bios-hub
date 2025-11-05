@@ -193,6 +193,34 @@
 }
 
 /* =========================================================
+   INPUT ELEMENT STYLES
+   ========================================================= */
+.radio {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg);
+}
+
+.dot.active {
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-border);
+}
+
+.radio__value {
+  font-size: 0.9rem;
+}
+
+/* =========================================================
    MISC. UTILITIES
    ========================================================= */
 

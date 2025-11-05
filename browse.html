@@ -55,17 +55,103 @@
           placeholder="Search BIOS files by model, brand, chipset..."
           class="search__input"
         />
-        <button class="search--btn button button--primary">Search</button>
+        <button class="search__btn button button--primary">Search</button>
       </div>
 
-      <nav id="menuNav" class="nav hidden">
+      <nav id="menuNav" class="nav">
         <a href="index.html" class="nav__link">Home</a>
         <a href="browse.html" class="nav__link active">Browse</a>
-        <a href="#" class="nav__link">Docs</a>
+        <!-- <a href="#" class="nav__link">Docs</a>
         <a href="#" class="nav__link">Community</a>
-        <a href="#" class="nav__link">Sign in</a>
+        <a href="#" class="nav__link">Sign in</a> -->
         <a href="#" class="nav__link nav__link--cta">Open App</a>
       </nav>
     </header>
+
+    <main class="main browse--main browse">
+      <aside class="aside-browse aside-card">
+        <h2 class="aside__h2">Filters</h2>
+        <div class="aside-card">
+          <h3 class="aside-card__h3">Brand</h3>
+          <div class="aside-card__list">
+            <button class="button button--alt aside-card-list__item">
+              <span>ASUS</span>
+            </button>
+            <button class="button button--alt aside-card-list__item">
+              <span>MSI</span>
+            </button>
+            <button class="button button--alt aside-card-list__item">
+              <span>Gigabyte</span>
+            </button>
+            <button class="button button--alt aside-card-list__item">
+              <span>ASRock</span>
+            </button>
+            <button class="button button--alt aside-card-list__item">
+              <span>Dell</span>
+            </button>
+            <button class="button button--alt aside-card-list__item">
+              <span>HP</span>
+            </button>
+          </div>
+        </div>
+        <div class="aside-card">
+          <h3 class="aside-card__h3">Chipset</h3>
+          <div class="aside-card__list">
+            <button class="button button--alt aside-card-list__item">
+              <span>Intel Z790</span>
+            </button>
+            <button class="button button--alt aside-card-list__item">
+              <span>Intel B660</span>
+            </button>
+            <button class="button button--alt aside-card-list__item">
+              <span>AMD X670E</span>
+            </button>
+            <button class="button button--alt aside-card-list__item">
+              <span>AMD B550</span>
+            </button>
+          </div>
+        </div>
+        <div class="aside-card">
+          <h3 class="aside-card__h3">Sort by</h3>
+          <div class="aside-card__list--column">
+            <div class="radio">
+              <div class="dot"></div>
+              <div class="radio__value">Rating (High → Low)</div>
+            </div>
+            <div class="radio">
+              <div class="dot"></div>
+              <div class="radio__value">Newest</div>
+            </div>
+            <div class="radio">
+              <div class="dot"></div>
+              <div class="radio__value">Most Downloaded</div>
+            </div>
+          </div>
+        </div>
+        <div class="aside__action">
+          <div class="button button--primary aside__btn">Apply Filters</div>
+        </div>
+      </aside>
+
+      <section class="browse-section">
+        <div class="browse-section__header">
+          <h2>Browse BIOS Files</h2>
+
+        </div>
+
+        <div class="browse-section__results">
+          <div class="browse-section__result">
+            <div class="browse-section__result__header">
+              <div class="browse-section__result__info">
+                <h3>ASUS ROG STRIX Z790-E BIOS v2202</h3>
+                
+              </div>
+              <div class="browse-section__result__actions"></div>
+            </div>
+            <div class="browse-section__result__desc"></div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
