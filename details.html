@@ -14,7 +14,7 @@
       property="og:description"
       content="Download verified BIOS BIN files easily. Fast, reliable, and regularly updated data — no hassle, no hidden steps."
     />
-    <meta property="og:url" content="https://www.bioshub.net/browse" />
+    <meta property="og:url" content="https://www.bioshub.net/details" />
     <meta property="og:type" content="website" />
 
     <!-- Styles -->
@@ -60,7 +60,7 @@
 
       <nav id="menuNav" class="nav">
         <a href="index.html" class="nav__link">Home</a>
-        <a href="browse.html" class="nav__link active">Browse</a>
+        <a href="browse.html" class="nav__link">Browse</a>
         <!-- <a href="#" class="nav__link">Docs</a>
         <a href="#" class="nav__link">Community</a>
         <a href="#" class="nav__link">Sign in</a> -->
@@ -68,11 +68,66 @@
       </nav>
     </header>
 
-    <main class="main main--alt browse">
-      <aside class="aside aside--browse card--alt">
-        <h2 class="aside__h2">Filters</h2>
+    <main class="main main--alt">
+      <section class="section--details">
+        <div class="">
+          <button class="button">
+            <img src="images/arrow-left-dark.svg" alt="" />
+            Back to results
+          </button>
+        </div>
+
+        <div class="section--details__result">
+          <div class="browse-result card--alt">
+            <div class="browse-result__header">
+              <div class="browse-result__info">
+                <h3>ASUS ROG STRIX Z790-E BIOS v2202</h3>
+                <div class="browse-result__meta">
+                  <div class="browse-result__div">Uploaded: 2025-05-12</div>
+                  <div class="browse-result__div">File: 790E-2022.bin</div>
+                  <div class="browse-result__div">Size: 35.5 MB</div>
+                  <div class="browse-result__div">SHA256 Verified</div>
+                </div>
+              </div>
+              <div class="browse-result__actions">
+                <a href="details.html" class="button">Share</a>
+                <button class="button button--primary">Download</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="details-div">
+            <div class="section__header--alt">
+              <h2 class="section__header__h2">
+                <img src="images/download-dark.svg" alt="" />
+                <span>Direct download (CDN)</span>
+              </h2>
+
+              <div>Checksum: 6F3A...9C2E</div>
+            </div>
+
+            <div class="card--alt">
+              Release notes: Improves DDR5 compatibility with new Hynix ICs,
+              updates Intel ME to 16.1.30, and fixes rare cold boot issues.
+            </div>
+            <div class="card--alt">
+              <strong>4.7</strong>
+              average · 128 ratings
+            </div>
+          </div>
+
+          <div class="details-div">
+            <h2 class="section__header__h2">
+              <span>Comments</span>
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <aside class="aside aside--details">
+        <!-- File integrity -->
         <div class="card--alt">
-          <h3 class="aside-card__h3">Brand</h3>
+          <h3 class="aside-card__h2">File Integrity</h3>
           <div class="aside-card__list">
             <button class="button button--alt aside-card-list__item">
               <span>ASUS</span>
@@ -94,73 +149,56 @@
             </button>
           </div>
         </div>
+        <!-- Version history -->
         <div class="card--alt">
-          <h3 class="aside-card__h3">Chipset</h3>
+          <h3 class="aside-card__h2">Version history</h3>
           <div class="aside-card__list">
             <button class="button button--alt aside-card-list__item">
-              <span>Intel Z790</span>
+              <span>ASUS</span>
             </button>
             <button class="button button--alt aside-card-list__item">
-              <span>Intel B660</span>
+              <span>MSI</span>
             </button>
             <button class="button button--alt aside-card-list__item">
-              <span>AMD X670E</span>
+              <span>Gigabyte</span>
             </button>
             <button class="button button--alt aside-card-list__item">
-              <span>AMD B550</span>
+              <span>ASRock</span>
+            </button>
+            <button class="button button--alt aside-card-list__item">
+              <span>Dell</span>
+            </button>
+            <button class="button button--alt aside-card-list__item">
+              <span>HP</span>
             </button>
           </div>
         </div>
+
+        <!-- Compatibility -->
         <div class="card--alt">
-          <h3 class="aside-card__h3">Sort by</h3>
-          <div class="aside-card__list--column">
-            <div class="radio">
-              <div class="dot"></div>
-              <div class="radio__value">Rating (High → Low)</div>
-            </div>
-            <div class="radio">
-              <div class="dot"></div>
-              <div class="radio__value">Newest</div>
-            </div>
-            <div class="radio">
-              <div class="dot"></div>
-              <div class="radio__value">Most Downloaded</div>
-            </div>
+          <h3 class="aside-card__h2">Compatibility</h3>
+          <div class="aside-card__list">
+            <button class="button button--alt aside-card-list__item">
+              <span>ASUS</span>
+            </button>
+            <button class="button button--alt aside-card-list__item">
+              <span>MSI</span>
+            </button>
+            <button class="button button--alt aside-card-list__item">
+              <span>Gigabyte</span>
+            </button>
+            <button class="button button--alt aside-card-list__item">
+              <span>ASRock</span>
+            </button>
+            <button class="button button--alt aside-card-list__item">
+              <span>Dell</span>
+            </button>
+            <button class="button button--alt aside-card-list__item">
+              <span>HP</span>
+            </button>
           </div>
-        </div>
-        <div class="aside__action">
-          <div class="button button--primary aside__btn">Apply Filters</div>
         </div>
       </aside>
-
-      <section class="section browse-section">
-        <div class="browse-section__header">
-          <h2>Browse BIOS Files</h2>
-        </div>
-
-        <div class="browse-section__results">
-          <div class="browse-result card--alt">
-            <div class="browse-result__header">
-              <div class="browse-result__info">
-                <h3>ASUS ROG STRIX Z790-E BIOS v2202</h3>
-                <div class="browse-result__meta">
-                  <div class="browse-result__uploaded">
-                    Uploaded: 2025-05-12
-                  </div>
-                  <div class="browse-result__rating">4.7 (128)</div>
-                </div>
-              </div>
-              <div class="browse-result__actions">
-                <a href="details.html" class="button">Details</a>
-                <button class="button button--primary">Download</button>
-              </div>
-            </div>
-            <div class="browse-result__desc">
-              Improved memory compatibility and updated Intel ME firmware.
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer class="footer">

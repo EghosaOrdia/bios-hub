@@ -49,6 +49,8 @@
   --color-primary-glow: rgba(30, 144, 255, 0.5);
   --color-secondary: #111827;
   --color-foreground: #e6f0ff;
+  --color-secondary-foreground: #c6d6ff;
+  --color-muted: #0a0f16;
   --color-muted-foreground: #8c9ab3;
   --color-glow: rgba(30, 144, 255, 0.15);
   --color-accent: #ffb020;
