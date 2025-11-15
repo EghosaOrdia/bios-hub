@@ -69,12 +69,12 @@
     </header>
 
     <main class="main main--alt">
-      <section class="section--details">
+      <section class="section section--details">
         <div class="">
-          <button class="button">
+          <a href="browse.html" class="button">
             <img src="images/arrow-left-dark.svg" alt="" />
             Back to results
-          </button>
+          </a>
         </div>
 
         <div class="section--details__result">
@@ -96,27 +96,30 @@
             </div>
           </div>
 
-          <div class="details-div">
+          <div class="details-div details__meta">
             <div class="section__header--alt">
               <h2 class="section__header__h2">
                 <img src="images/download-dark.svg" alt="" />
                 <span>Direct download (CDN)</span>
               </h2>
 
-              <div>Checksum: 6F3A...9C2E</div>
+              <div title="checksum: 6F3A...9C2E" class="browse-result__div">
+                Checksum: 6F3A...9C2E
+              </div>
             </div>
 
             <div class="card--alt">
               Release notes: Improves DDR5 compatibility with new Hynix ICs,
               updates Intel ME to 16.1.30, and fixes rare cold boot issues.
             </div>
+
             <div class="card--alt">
               <strong>4.7</strong>
               average · 128 ratings
             </div>
           </div>
 
-          <div class="details-div">
+          <div class="details-div details__comments">
             <h2 class="section__header__h2">
               <span>Comments</span>
             </h2>
@@ -128,25 +131,23 @@
         <!-- File integrity -->
         <div class="card--alt">
           <h3 class="aside-card__h2">File Integrity</h3>
-          <div class="aside-card__list">
-            <button class="button button--alt aside-card-list__item">
-              <span>ASUS</span>
-            </button>
-            <button class="button button--alt aside-card-list__item">
-              <span>MSI</span>
-            </button>
-            <button class="button button--alt aside-card-list__item">
-              <span>Gigabyte</span>
-            </button>
-            <button class="button button--alt aside-card-list__item">
-              <span>ASRock</span>
-            </button>
-            <button class="button button--alt aside-card-list__item">
-              <span>Dell</span>
-            </button>
-            <button class="button button--alt aside-card-list__item">
-              <span>HP</span>
-            </button>
+          <div class="aside-card__list--column">
+            <div class="aside__item">
+              <span>SHA256</span>
+              <span class="aside__value">6F3A...9C2E</span>
+            </div>
+            <div class="aside__item">
+              <span>MD5</span>
+              <span class="aside__value">6F3A...9C2E</span>
+            </div>
+            <div class="aside__item">
+              <span>Size</span>
+              <span class="aside__value">35.6MB</span>
+            </div>
+            <div class="aside__item">
+              <span>Signed</span>
+              <span class="aside__value">Yes</span>
+            </div>
           </div>
         </div>
         <!-- Version history -->
@@ -177,25 +178,19 @@
         <!-- Compatibility -->
         <div class="card--alt">
           <h3 class="aside-card__h2">Compatibility</h3>
-          <div class="aside-card__list">
-            <button class="button button--alt aside-card-list__item">
-              <span>ASUS</span>
-            </button>
-            <button class="button button--alt aside-card-list__item">
-              <span>MSI</span>
-            </button>
-            <button class="button button--alt aside-card-list__item">
-              <span>Gigabyte</span>
-            </button>
-            <button class="button button--alt aside-card-list__item">
-              <span>ASRock</span>
-            </button>
-            <button class="button button--alt aside-card-list__item">
-              <span>Dell</span>
-            </button>
-            <button class="button button--alt aside-card-list__item">
-              <span>HP</span>
-            </button>
+          <div class="aside-card__list--column">
+            <div class="aside__item">
+              <span>Chipset</span>
+              <span class="aside__value">Intel Z790</span>
+            </div>
+            <div class="aside__item">
+              <span>Board</span>
+              <span class="aside__value">ROG STRIX Z790-E</span>
+            </div>
+            <div class="aside__item">
+              <span>CPU</span>
+              <span class="aside__value">12th/13th Gen Intel</span>
+            </div>
           </div>
         </div>
       </aside>
