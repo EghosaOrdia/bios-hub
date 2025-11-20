@@ -12,11 +12,19 @@
   gap: 2.5rem;
   text-align: center;
   padding: 6rem 2rem 4rem;
-  background: radial-gradient(
+  background-image: linear-gradient(
+      rgba(16, 25, 34, 0.8) 0%,
+      rgba(16, 25, 34, 1) 100%
+    ),
+    url("../images/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background: radial-gradient(
     circle at 50% 20%,
     rgba(30, 144, 255, 0.15),
     transparent 60%
-  );
+  ); */
   position: relative;
   overflow: hidden;
 }
@@ -231,10 +239,15 @@ article.card {
   justify-content: space-between;
   align-items: center;
 }
+
 .browse-result__info {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 1rem;
+}
+
+.result__title {
+  font-size: 2.5rem;
 }
 
 .browse-result__meta {
@@ -255,6 +268,73 @@ article.card {
   margin-top: 1rem;
 }
 
+.browse-result__tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.verified {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  background-color: #22c55e33;
+  color: #4ade80;
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-sm);
+}
+
+.stable {
+  color: #60a5fa;
+  background-color: #3b82f633;
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-sm);
+}
+
+.recommended {
+  color: #facc15;
+  background-color: #eab30833;
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-sm);
+}
+
+.browse-result__actions {
+  margin-top: 1rem;
+}
+
+.warning {
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+  background-color: #eab3081a;
+  border: 1px solid #eab3084d;
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+}
+
+.warning__h3 {
+  font-size: 1.1rem;
+  padding: 0;
+  line-height: 0.8;
+  color: #facc15cc;
+}
+
+.warning__p {
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #facc15cc;
+}
+
+.warning__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.release__notes {
+  padding: 0 1.5rem;
+}
 /* Aside */
 .aside--browse {
   float: left;
@@ -295,16 +375,21 @@ article.card {
   color: var(--color-secondary-foreground);
 }
 
-.aside-card-list__item {
-  background-color: var(--color-secondary);
-  padding: 8px 12px;
+.aside__item--alt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-secondary-foreground);
+  background-color: var(--color-bg);
+  padding: 0.5rem;
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  font-size: 0.8rem;
 }
 
 .button--alt.active {
   background-color: var(--color-primary);
 }
+
 .button--alt:hover {
   transform: none;
   box-shadow: none;

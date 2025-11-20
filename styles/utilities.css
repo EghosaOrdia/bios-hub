@@ -102,6 +102,11 @@
   box-shadow: 0 0 12px var(--color-primary-glow);
 }
 
+.button--faded {
+  color: var(--color-muted-foreground);
+  border: none;
+}
+
 /* Secondary Button */
 .button--secondary {
   background: var(--color-secondary);
@@ -218,7 +223,7 @@
 }
 
 .dot.active {
-  width: 16px;
+  width: 16.5px;
   height: 16px;
   background-color: var(--color-primary);
   border: 2px solid var(--color-border);
@@ -264,4 +269,10 @@
   z-index: 20;
   backdrop-filter: blur(2px);
   transition: opacity var(--transition-fast);
+}
+
+/* Images */
+.button__img {
+  width: 16px;
+  color: #fff;
 }

@@ -12,3 +12,11 @@ menuToggle.addEventListener("click", () => {
   menuNav.classList.toggle("mobile");
   toggleClasses(overlay, menuToggle);
 });
+
+const dotButtons = document.querySelectorAll(".dot");
+dotButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    dotButtons.forEach((btn) => btn.classList.remove("active"));
+    button.classList.add("active");
+  });
+});

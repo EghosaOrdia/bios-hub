@@ -72,7 +72,7 @@
       <section class="section section--details">
         <div class="">
           <a href="browse.html" class="button">
-            <img src="images/arrow-left-dark.svg" alt="" />
+            <img src="images/arrow-left-dark.svg" alt="arrow left icon" />
             Back to results
           </a>
         </div>
@@ -81,25 +81,82 @@
           <div class="browse-result card--alt">
             <div class="browse-result__header">
               <div class="browse-result__info">
-                <h3>ASUS ROG STRIX Z790-E BIOS v2202</h3>
+                <h3 class="result__title">ASUS ROG STRIX Z790-E BIOS v2202</h3>
+                <p class="result__description">
+                  A critical update to improve system stability and memory
+                  compability.
+                </p>
                 <div class="browse-result__meta">
                   <div class="browse-result__div">Uploaded: 2025-05-12</div>
                   <div class="browse-result__div">File: 790E-2022.bin</div>
                   <div class="browse-result__div">Size: 35.5 MB</div>
                   <div class="browse-result__div">SHA256 Verified</div>
                 </div>
+
+                <div class="browse-result__tags">
+                  <div class="verified">
+                    <img
+                      src="images/check-badge.svg"
+                      alt="verified icon"
+                      class="button__img"
+                    />
+                    <span>Verified</span>
+                  </div>
+                  <div class="stable"><span>Stable</span></div>
+                  <div class="recommended"><span>Recommended</span></div>
+                </div>
+
+                <div class="browse-result__actions">
+                  <button class="button button--primary">
+                    <img
+                      src="images/download-dark.svg"
+                      alt="download icon"
+                      class="button__img"
+                    />
+                    <span>Download</span>
+                  </button>
+                  <button class="button button--faded">
+                    <img
+                      src="images/report.svg"
+                      alt="report icon"
+                      class="button__img"
+                    />
+                    <span>Report File</span>
+                  </button>
+                  <button class="button button--faded">
+                    <img
+                      src="images/share.svg"
+                      alt="share icon"
+                      class="button__img"
+                    />
+                    <span>Copy Share Link</span>
+                  </button>
+                </div>
               </div>
-              <div class="browse-result__actions">
-                <a href="details.html" class="button">Share</a>
-                <button class="button button--primary">Download</button>
-              </div>
+            </div>
+          </div>
+
+          <div class="warning">
+            <img
+              src="images/caution.svg"
+              alt="caution icon"
+              class="button__img"
+            />
+            <div class="warning__meta">
+              <h3 class="warning__h3">Proceed with Caution</h3>
+              <p class="warning__p">
+                Flashing a BIOS is critical procedure that can render your
+                system unusable if done incorrectly. Ensure you follow the
+                Manufacturer's instructions carefully. <b>BIOSHub</b> is not
+                responsible for any damage.
+              </p>
             </div>
           </div>
 
           <div class="details-div details__meta">
             <div class="section__header--alt">
               <h2 class="section__header__h2">
-                <img src="images/download-dark.svg" alt="" />
+                <img src="images/download-dark.svg" alt="download icon" />
                 <span>Direct download (CDN)</span>
               </h2>
 
@@ -109,8 +166,12 @@
             </div>
 
             <div class="card--alt">
-              Release notes: Improves DDR5 compatibility with new Hynix ICs,
-              updates Intel ME to 16.1.30, and fixes rare cold boot issues.
+              <h3>Release notes</h3>
+              <ul class="release__notes">
+                <li>Improves DDR5 compatibility with new Hynix ICs</li>
+                <li>Updates Intel ME to 16.1.30</li>
+                <li>Fixes rare cold boot issues</li>
+              </ul>
             </div>
 
             <div class="card--alt">
@@ -153,24 +214,18 @@
         <!-- Version history -->
         <div class="card--alt">
           <h3 class="aside-card__h2">Version history</h3>
-          <div class="aside-card__list">
-            <button class="button button--alt aside-card-list__item">
-              <span>ASUS</span>
+          <div class="aside-card__list--column">
+            <button class="button button--alt aside__item--alt">
+              <span>v2202</span>
+              <span>Current</span>
             </button>
-            <button class="button button--alt aside-card-list__item">
-              <span>MSI</span>
+            <button class="button button--alt aside__item--alt">
+              <span>v2105</span>
+              <span>2023-03-02</span>
             </button>
-            <button class="button button--alt aside-card-list__item">
-              <span>Gigabyte</span>
-            </button>
-            <button class="button button--alt aside-card-list__item">
-              <span>ASRock</span>
-            </button>
-            <button class="button button--alt aside-card-list__item">
-              <span>Dell</span>
-            </button>
-            <button class="button button--alt aside-card-list__item">
-              <span>HP</span>
+            <button class="button button--alt aside__item--alt">
+              <span>v2001</span>
+              <span>2025-01-18</span>
             </button>
           </div>
         </div>
