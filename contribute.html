@@ -120,10 +120,15 @@
             </div>
             <div class="form__control">
               <label class="form__label" for="biosfile">BIOS File</label>
-              <label for="biosfile" class="form__input form__upload">
+              <label for="biosfile" class="form__input form__upload hidden">
                 <p>Drop your file here or <span>click to browse</span></p>
                 <span>Max file size: 32MB</span>
               </label>
+              <div id="filedetails" class="form__input file__details">
+                <span>rog-strix-z690-e-1720.zip</span>
+                <span>31.4MB</span>
+                <button type="button" class="button">reupload</button>
+              </div>
               <input id="biosfile" name="biosfile" type="file" />
             </div>
             <div class="progress-div">
@@ -136,7 +141,7 @@
               </div>
             </div>
             <div class="form__action">
-              <button class="button button--form">Cancel</button>
+              <button class="button button--form">Clear</button>
               <button class="button button--form button--primary">
                 Submit BIOS
               </button>
