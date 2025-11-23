@@ -7,6 +7,38 @@
 /* Load Poppins font files from the local `fonts/` folder. Use @font-face
    to register the family and weights, then reference via --font-primary. */
 @font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/SpaceGrotesk-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/SpaceGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/SpaceGrotesk-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/SpaceGrotesk-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
@@ -45,6 +77,7 @@
   --color-bg-alt: #121b2b;
   --color-card: #0c1320;
   --color-border: #283245;
+  --color-border-2: rgb(255 255 255 / 20%);
   --color-primary: #1e90ff;
   --color-primary-glow: rgba(30, 144, 255, 0.5);
   --color-secondary: #111827;
@@ -55,10 +88,12 @@
   --color-glow: rgba(30, 144, 255, 0.15);
   --color-accent: #ffb020;
   --color-sidebar-foreground: #9fb3d8;
+  --color-input-bg: rgba(255, 255, 255, 0.051);
 
   /* Typography */
-  /* --font-primary: "DM Sans", sans-serif; */
-  --font-primary: "Poppins", sans-serif;
+  /* --font-primary: "DM Sans", sans-serif; 
+  --font-primary: "Poppins", sans-serif; */
+  --font-primary: "Space Grotesk", sans-serif;
 
   /* Font Weights */
   --weight-normal: 400;

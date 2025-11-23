@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BIOS Hub</title>
+
+    <meta
+      name="description"
+      content="Download verified BIOS BIN files easily. Fast, reliable, and regularly updated data — no hassle, no hidden steps."
+    />
+    <meta property="og:site_name" content="BIOS Hub" />
+    <meta
+      property="og:description"
+      content="Download verified BIOS BIN files easily. Fast, reliable, and regularly updated data — no hassle, no hidden steps."
+    />
+    <meta property="og:url" content="https://www.bioshub.net/details" />
+    <meta property="og:type" content="website" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <!-- Scripts -->
+    <script defer src="scripts/main.js"></script>
+  </head>
+  <body>
+    <div class="overlay"></div>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+      <div class="header__logo">
+        <a href="#" class="logo__link">
+          <img
+            src="images/logo-dark.svg"
+            alt="BIOS Hub logo"
+            class="logo__img"
+          />
+        </a>
+        <span class="logo__text">BIOS Hub</span>
+      </div>
+
+      <button
+        id="menuToggle"
+        class="menu-toggle"
+        aria-label="Toggle navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="menuNav" class="nav">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="browse.html" class="nav__link">Browse</a>
+        <!-- <a href="#" class="nav__link">Docs</a>
+        <a href="#" class="nav__link">Community</a> -->
+        <a href="contribute.html" class="nav__link active">Contribute</a>
+        <a href="#" class="nav__link nav__link--cta">Open App</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="section contribute--section">
+        <form action="#" class="contribute-form">
+          <div class="form__heading">
+            <h1>Contribute to the archive</h1>
+            <p>
+              Upload a new BIOS file to help the community. Please ensure all
+              information is accurate and the file is from a trusted source.
+            </p>
+          </div>
+
+          <div class="form__body">
+            <div class="guidelines">
+              <h2>Submission Guidelines</h2>
+              <ul>
+                <li>Accepted formats are .bin, .rom or .zip</li>
+                <li>
+                  Provide the exact device manufacturer, model and BIOS version
+                </li>
+                <li>
+                  Only upload authentic, unmodified files from official sources.
+                </li>
+                <li>All submissions are subject to a moderation</li>
+              </ul>
+            </div>
+            <div class="form__control--alt">
+              <div class="alt">
+                <label class="form__label" for="manufacturer"
+                  >Device Manufacturer & Label</label
+                >
+                <input
+                  id="manufacturer"
+                  name="manufacturer"
+                  type="text"
+                  placeholder="e.g ASUS ROG Strix Z790-E"
+                  class="form__input"
+                />
+              </div>
+              <div class="alt">
+                <label class="form__label" for="version">BIOS Version</label>
+                <input
+                  id="version"
+                  name="version"
+                  type="text"
+                  placeholder="e.g 1720"
+                  class="form__input"
+                />
+              </div>
+            </div>
+            <div class="form__control">
+              <label class="form__label" for="description">Description</label>
+              <textarea
+                id="description"
+                name="description"
+                type="text"
+                placeholder="Include details like stability notes, release dates or specific fixed this version addressess. Seperate each entry with a comma"
+                class="form__input"
+              ></textarea>
+            </div>
+            <div class="form__control">
+              <label class="form__label" for="biosfile">BIOS File</label>
+              <label for="biosfile" class="form__input form__upload">
+                <p>Drop your file here or <span>click to browse</span></p>
+                <span>Max file size: 32MB</span>
+              </label>
+              <input id="biosfile" name="biosfile" type="file" />
+            </div>
+            <div class="progress-div">
+              <label class="form__label">
+                <span>rog-strix-z690-e-1720.zip</span>
+                <span>48%</span>
+              </label>
+              <div class="progress-bar">
+                <div class="progress"></div>
+              </div>
+            </div>
+            <div class="form__action">
+              <button class="button button--form">Cancel</button>
+              <button class="button button--form button--primary">
+                Submit BIOS
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">© 2025 BIOS Hub. All rights reserved.</p>
+      <nav class="footer--nav">
+        <a class="nav__link">Privacy</a>
+        <a class="nav__link">Terms</a>
+        <a class="nav__link">Contact</a>
+      </nav>
+    </footer>
+  </body>
+</html>
