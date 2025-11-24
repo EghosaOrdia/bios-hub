@@ -492,6 +492,10 @@ article.card {
     padding: 0 1.2rem;
     margin-top: 0.7rem;
     color: var(--color-muted-foreground);
+
+    li {
+      margin-top: 0.5rem;
+    }
   }
 }
 
@@ -503,13 +507,13 @@ article.card {
   }
   p {
     color: var(--color-muted-foreground);
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
   }
 }
 
 .form__body {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -548,6 +552,7 @@ article.card {
 
 .file__details {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
   color: var(--color-muted-foreground);
@@ -604,6 +609,7 @@ input[type="file"] {
 
 .form__action {
   display: flex;
+  flex-direction: column;
   justify-content: end;
   gap: 0.5rem;
 }

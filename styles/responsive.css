@@ -71,6 +71,20 @@
     flex-direction: row;
   }
 
+  .form__heading {
+    p {
+      width: 50%;
+    }
+  }
+
+  .form__action {
+    flex-direction: row;
+  }
+
+  .form__body {
+    width: 50%;
+  }
+
   .footer {
     flex-direction: row;
     padding: 2rem;
