@@ -174,9 +174,32 @@
               </ul>
             </div>
 
-            <div class="card--alt">
-              <strong>4.7</strong>
-              average · 128 ratings
+            <div class="card--alt rating-info">
+              <span><strong>4.7</strong> ☆ average</span>
+              <span>·</span>
+              <span><strong>128</strong> ratings</span>
+              <fieldset class="rating__stars">
+                <input type="radio" id="star5" name="rating" value="5" /><label
+                  for="star5"
+                  title="5 stars"
+                ></label>
+                <input type="radio" id="star4" name="rating" value="4" /><label
+                  for="star4"
+                  title="4 stars"
+                ></label>
+                <input type="radio" id="star3" name="rating" value="3" /><label
+                  for="star3"
+                  title="3 stars"
+                ></label>
+                <input type="radio" id="star2" name="rating" value="2" /><label
+                  for="star2"
+                  title="2 stars"
+                ></label>
+                <input type="radio" id="star1" name="rating" value="1" /><label
+                  for="star1"
+                  title="1 star"
+                ></label>
+              </fieldset>
             </div>
           </div>
 
@@ -184,6 +207,34 @@
             <h2 class="section__header__h2">
               <span>Comments</span>
             </h2>
+
+            <div class="comments">
+              <div class="comment">
+                <!-- <img src="" alt="" /> -->
+                <div class="comment__meta">
+                  <input
+                    type="text"
+                    placeholder="Share your experience with this BIOS (stability, temps, quirks)"
+                    class="form__input"
+                  />
+                </div>
+                <button class="button button--primary">Post</button>
+              </div>
+
+              <div class="comment">
+                <!-- <img src="" alt="" /> -->
+                <div class="comment__meta">
+                  <div class="comment__heading">
+                    <span class="comment__name">Mia Thomsom</span>
+                    <span class="comment__date">2025-01-18</span>
+                  </div>
+                  <div class="comment__body">
+                    Rock solid on 19300K. Memory at 7200 XMP works now.
+                  </div>
+                </div>
+                <div class="comment__rating"><span>5</span> ☆</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

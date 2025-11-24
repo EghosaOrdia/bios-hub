@@ -85,6 +85,16 @@
     width: 50%;
   }
 
+  .comment {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .rating__stars {
+    margin-left: auto;
+  }
+
   .footer {
     flex-direction: row;
     padding: 2rem;
