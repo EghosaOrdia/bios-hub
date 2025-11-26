@@ -22,6 +22,7 @@
 
     <!-- Scripts -->
     <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/handle-form.js"></script>
   </head>
   <body>
     <div class="overlay"></div>
@@ -95,6 +96,7 @@
                   type="text"
                   placeholder="e.g ASUS ROG Strix Z790-E"
                   class="form__input"
+                  required
                 />
               </div>
               <div class="alt">
@@ -105,6 +107,7 @@
                   type="text"
                   placeholder="e.g 1720"
                   class="form__input"
+                  required
                 />
               </div>
             </div>
@@ -116,20 +119,34 @@
                 type="text"
                 placeholder="Include details like stability notes, release dates or specific fixed this version addressess. Seperate each entry with a comma"
                 class="form__input"
+                required
               ></textarea>
             </div>
             <div class="form__control">
               <label class="form__label" for="biosfile">BIOS File</label>
-              <label for="biosfile" class="form__input form__upload hidden">
+
+              <label for="biosfile" class="form__input form__upload">
                 <p>Drop your file here or <span>click to browse</span></p>
                 <span>Max file size: 32MB</span>
               </label>
-              <div id="filedetails" class="form__input file__details">
-                <span>rog-strix-z690-e-1720.zip</span>
-                <span>31.4MB</span>
-                <button type="button" class="button">reupload</button>
+              <div id="filedetails" class="form__input file__details hidden">
+                <span id="fileName">rog-strix-z690-e-1720.zip</span>
+                <span id="fileSize">31.4MB</span>
+                <button id="clearfile" type="button" class="button">
+                  <img
+                    src="images/reload.svg"
+                    alt="reload icon"
+                    class="button__img"
+                  />
+                </button>
               </div>
-              <input id="biosfile" name="biosfile" type="file" />
+              <input
+                id="biosfile"
+                name="biosfile"
+                type="file"
+                accept=".bin,.zip,.rom"
+                required
+              />
             </div>
             <div class="progress-div">
               <label class="form__label">
@@ -141,7 +158,9 @@
               </div>
             </div>
             <div class="form__action">
-              <button type="button" class="button button--form">Clear</button>
+              <button id="clearForm" type="button" class="button button--form">
+                Clear
+              </button>
               <button class="button button--form button--primary">
                 Submit BIOS
               </button>
