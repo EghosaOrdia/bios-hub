@@ -1,11 +1,8 @@
 const fileInput = document.getElementById("biosfile");
-const clearFile = document.getElementById("clearfile");
-const formUploadContainer = document.querySelector(".form__upload");
-const fileDetails = document.getElementById("filedetails");
-const fileSize = document.getElementById("fileSize");
-const fileName = document.getElementById("fileName");
 
 const toggleInput = () => {
+  const formUploadContainer = document.querySelector(".form__upload");
+  const fileDetails = document.getElementById("filedetails");
   if (fileInput.files.length > 0) {
     fileDetails.classList.remove("hidden");
     formUploadContainer.classList.add("hidden");
@@ -16,10 +13,10 @@ const toggleInput = () => {
 };
 
 fileInput.addEventListener("change", () => {
+  const fileName = document.getElementById("fileName");
+  const fileSize = document.getElementById("fileSize");
   if (fileInput.files.length > 0) {
     toggleInput();
-    formUploadContainer.classList.add("hidden");
-    fileDetails.classList.remove("hidden");
 
     const files = fileInput.files[0];
     fileName.textContent = files.name;
@@ -27,6 +24,7 @@ fileInput.addEventListener("change", () => {
   }
 });
 
+const clearFile = document.getElementById("clearfile");
 clearFile.addEventListener("click", () => {
   fileInput.value = "";
   toggleInput();
