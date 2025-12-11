@@ -89,6 +89,7 @@
   --color-accent: #ffb020;
   --color-sidebar-foreground: #9fb3d8;
   --color-input-bg: rgba(255, 255, 255, 0.051);
+  --color-dark-bg: #1a1a1d;
 
   /* Typography */
   /* --font-primary: "DM Sans", sans-serif; 
