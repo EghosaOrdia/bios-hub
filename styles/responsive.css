@@ -23,6 +23,15 @@
 
 @media (min-width: 641px) and (max-width: 1024px) {
 }
+@media (min-width: 1025px) {
+  .section__list--grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section__list--grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 /* =========================================================
    TABLET — min-width: 640px
    ========================================================= */
@@ -77,14 +86,6 @@
 
   .section__title {
     font-size: 2rem;
-  }
-
-  .section__list--grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .section__list--grid-3 {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .section__cta {
