@@ -2,7 +2,281 @@
    LAYOUT.CSS
    Structure, header, nav, sections, and footer
    ========================================================= */
+.admin-body {
+  padding-top: 0;
+}
+
 .admin-main {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.admin-aside {
+  display: none;
+  flex-direction: column;
+  min-width: 250px;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: var(--color-dark-bg);
+  border-right: 1px solid var(--color-border);
+}
+
+.admin-aside.open {
+  display: flex;
+}
+
+.header__logo {
+  margin-bottom: 2rem;
+}
+
+.admin-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.admin__links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+.admin__link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: inherit;
+}
+
+.admin__link:hover {
+  color: var(--color-primary);
+}
+
+.admin__link.active {
+  color: var(--color-primary);
+  font-weight: var(--weight-bold);
+}
+
+.admin__settings {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.admin__logout {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.admin-img {
+  width: 25px;
+}
+
+.admin-user {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.admin-username {
+  font-weight: var(--weight-bold);
+}
+
+.admin-user-type {
+  color: var(--color-foreground);
+}
+
+.admin__user-img {
+  width: 30px;
+}
+
+.admin-section-main {
+  flex: 1;
+  padding: 3rem;
+}
+
+.admin-section__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.admin-button {
+  border: none;
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 0.9rem 1.2rem;
+  transition: all var(--transition-fast);
+  border-radius: var(--radius-xl);
+}
+
+.admin-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow);
+}
+
+.admin-stats {
+  margin-top: 3rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+  column-gap: 1rem;
+  grid-template-columns: 1fr;
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  span {
+    font-size: 2rem;
+    font-weight: var(--weight-bold);
+  }
+}
+
+.admin__stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  background-color: var(--color-dark-bg);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+
+  h2 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+
+.admin-section__navigation {
+  margin-top: 3rem;
+
+  nav {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+}
+
+.admin__nav {
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: var(--weight-medium);
+}
+
+.admin__nav.active {
+  border-bottom: 3px solid var(--color-primary);
+}
+
+.admin__nav:hover {
+  color: #ffffff;
+}
+
+.admin-section__actions {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--color-dark-bg);
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.admin__button {
+  border: none;
+  background-color: transparent;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.admin__button:hover {
+  background-color: var(--color-glow);
+  border-radius: 0.6rem;
+}
+
+.filter-img {
+  height: 19px;
+}
+
+.admin-files {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: start;
+  margin-top: 2rem;
+}
+
+.admin-file {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  gap: 1rem;
+  background-color: var(--color-dark-bg);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.file-name-version {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  .title {
+    font-weight: var(--weight-semibold);
+  }
+
+  .version {
+    color: var(--color-muted-foreground);
+  }
+}
+
+.file__rating {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.rating__stars {
+  color: var(--color-accent);
+}
+
+.file__uploaded {
+  color: var(--color-muted-foreground);
+}
+
+.file__downloads {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.file__actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.file-action__btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.file-action__btn:hover {
+  transform: scale(1.02);
 }

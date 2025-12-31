@@ -22,94 +22,215 @@
     <meta property="og:type" content="website" />
 
     <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="../styles/main.css" />
 
     <!-- Scripts -->
-    <script defer src="../scripts/main.js"></script>
-    <script defer src="../scripts/handle-form.js"></script>
+    <script defer src="../scripts/handleSidebar.js"></script>
   </head>
-  <body>
+  <body class="admin-body">
     <div class="overlay"></div>
 
     <!-- ================= HEADER ================= -->
 
     <main class="admin-main">
-      <aside class="aside">
-        <div class="header__logo">
-          <a href="#" class="logo__link">
-            <img
-              src="images/logo-dark.svg"
-              alt="BIOS Hub logo"
-              class="logo__img"
-            />
-          </a>
-          <span class="logo__text">BIOS Hub</span>
-        </div>
+      <button class="sidebar-toggle" id="sidebarToggle">
+        <img src="images/icons/sidebar-right.svg" alt="sidebar right icon" />
+      </button>
+      <aside class="admin-aside" id="asidebar">
+        <div class="aside-header">
+          <div class="header__logo">
+            <a href="#" class="logo__link">
+              <img
+                src="../images/logo-dark.svg"
+                alt="BIOS Hub logo"
+                class="logo__img"
+              />
+            </a>
+            <span class="logo__text">BIOS Hub</span>
+          </div>
 
-        <ul class="admin__links">
-          <li class="admin__link">
-            <img src="" alt="" class="admin-link__img" />
-            <span class="admin-link__span">Dashboard</span>
-          </li>
-          <li class="admin__link">
-            <img src="" alt="" class="admin-link__img" />
-            <span class="admin-link__span">User Profile</span>
-          </li>
-          <li class="admin__link">
-            <img src="" alt="" class="admin-link__img" />
-            <span class="admin-link__span">BIOS Files</span>
-          </li>
-          <li class="admin__link">
-            <img src="" alt="" class="admin-link__img" />
-            <span class="admin-link__span">My Activity</span>
-          </li>
-        </ul>
+          <ul class="admin__links">
+            <li>
+              <a href="../index.html" class="admin__link">
+                <img
+                  src="images/icons/home.svg"
+                  alt=""
+                  class="admin-img admin-link__img"
+                />
+                <span class="admin-link__span">Back Home</span>
+              </a>
+            </li>
+            <li class="admin__link active">
+              <img
+                src="images/icons/dashboard.svg"
+                alt=""
+                class="admin-img admin-link__img"
+              />
+              <span class="admin-link__span">Dashboard</span>
+            </li>
+            <li class="admin__link">
+              <img
+                src="images/icons/user.svg"
+                alt=""
+                class="admin-img admin-link__img"
+              />
+              <span class="admin-link__span">User Profile</span>
+            </li>
+            <li class="admin__link">
+              <img
+                src="images/icons/file-upload.svg"
+                alt=""
+                class="admin-img admin-link__img"
+              />
+              <span class="admin-link__span">BIOS Files</span>
+            </li>
+            <li class="admin__link">
+              <img
+                src="images/icons/activity.svg"
+                alt=""
+                class="admin-img admin-link__img"
+              />
+              <span class="admin-link__span">My Activity</span>
+            </li>
+          </ul>
+        </div>
 
         <div class="admin-actions">
           <div class="admin-user">
-            <img src="" alt="" />
-            <span>Username</span>
-            <span>BIOS Master</span>
+            <img
+              src="images/icons/dashboard.svg"
+              alt=""
+              class="admin__user-img"
+            />
+            <div>
+              <span class="admin-username">Username</span>
+              <span class="admin-user-type">BIOS Master</span>
+            </div>
           </div>
           <div class="admin__settings">
-            <img src="" alt="" />
+            <img src="images/icons/gear.svg" alt="" class="admin-img" />
             <span>Settings</span>
           </div>
           <div class="admin__logout">
-            <img src="" alt="" />
+            <img src="images/icons/logout.svg" alt="" class="admin-img" />
             <span>Logout</span>
           </div>
         </div>
       </aside>
-      <section class="section-main">
+
+      <section class="admin-section-main">
         <div class="admin-section__heading">
           <div class="admin-section__meta">
-            <h1 class="admin-section__header"></h1>
-            <p class="admin-section__subtext"></p>
+            <h1 class="admin-section__header">User Profile</h1>
+            <p class="admin-section__subtext">
+              Manage Your contributions and Settings
+            </p>
           </div>
-          <button class="button admin-section__button">Edit Profile</button>
+          <button class="admin-button admin-section__button">
+            Edit Profile
+          </button>
         </div>
 
         <div class="admin-stats">
           <div class="admin__stat">
-            <h2></h2>
-            <p></p>
+            <h2 class="stat">Total BIOS Uploads</h2>
+            <span>12</span>
           </div>
+
           <div class="admin__stat">
-            <h2></h2>
-            <p></p>
+            <h2>Total Downloads</h2>
+            <span>1,204</span>
           </div>
+
           <div class="admin__stat">
-            <h2></h2>
-            <p></p>
+            <h2>Comments Made</h2>
+            <span>88</span>
           </div>
+
           <div class="admin__stat">
-            <h2></h2>
-            <p></p>
+            <h2>Average Rating</h2>
+            <span>4.8</span>
           </div>
         </div>
 
-        <div class="admin-section__navigation"></div>
+        <div class="admin-section__navigation">
+          <nav>
+            <a href="#" class="admin__nav active">Uploaded BIOS</a>
+            <a href="#" class="admin__nav">Comment History</a>
+            <a href="#" class="admin__nav">Settings</a>
+          </nav>
+        </div>
+
+        <div class="admin-section__actions">
+          <button class="admin__button sort" id="sortTitle">
+            <img src="images/icons/sort.svg" alt="" class="admin-img" />
+          </button>
+          <button class="admin__button filter" id="filterTitle">
+            <img src="images/icons/filter.svg" alt="" class="filter-img" />
+          </button>
+        </div>
+
+        <div class="admin-files">
+          <div class="admin-file">
+            <div class="file-name-version">
+              <span class="title">ASUS ROG Maximus Z790 Hero</span>
+              <span class="version">Version: 1402</span>
+            </div>
+            <div class="file__rating">
+              <fieldset class="rating__stars">
+                <input type="radio" id="star5" name="rating" value="5" /><label
+                  for="star5"
+                  title="5 stars"
+                ></label>
+                <input type="radio" id="star4" name="rating" value="4" /><label
+                  for="star4"
+                  title="4 stars"
+                ></label>
+                <input type="radio" id="star3" name="rating" value="3" /><label
+                  for="star3"
+                  title="3 stars"
+                ></label>
+                <input type="radio" id="star2" name="rating" value="2" /><label
+                  for="star2"
+                  title="2 stars"
+                ></label>
+                <input type="radio" id="star1" name="rating" value="1" /><label
+                  for="star1"
+                  title="1 star"
+                ></label>
+              </fieldset>
+              <span>(4.7)</span>
+            </div>
+            <div class="file__downloads">
+              <img
+                src="images/icons/download.svg"
+                alt=""
+                class="file__downloads__icon admin-img"
+              />
+              <span>812</span>
+            </div>
+            <div class="file__uploaded">
+              <span>Oct 26, 2025</span>
+            </div>
+            <div class="file__actions">
+              <button class="file-action__btn edit-button" id="editButton">
+                <img
+                  src="images/icons/edit.svg"
+                  alt="edit file upload"
+                  class="admin-img"
+                />
+              </button>
+              <button class="file-action__btn delete-button" id="deleteFile">
+                <img
+                  src="images/icons/delete.svg"
+                  alt="delete uploaded file"
+                  class="admin-img"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 

@@ -20,3 +20,15 @@ dotButtons.forEach((button) => {
     button.classList.add("active");
   });
 });
+
+// Handle Profile Dropdown
+const profileBtn = document.getElementById("profileBtn");
+const navDropdown = document.getElementById("navDropdown");
+
+profileBtn.addEventListener("click", () => {
+  navDropdown.classList.toggle("active");
+});
+
+document.querySelector("main").addEventListener("click", () => {
+  navDropdown.classList.toggle("active");
+});
