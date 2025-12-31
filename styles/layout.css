@@ -62,23 +62,6 @@
   float: right;
 }
 
-/* Nav */
-.nav {
-  display: none;
-  align-items: center;
-  flex-direction: column;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  padding: 1rem;
-  background-color: var(--color-bg-alt);
-}
-
-.nav.mobile {
-  display: flex;
-}
-
 .nav__link {
   color: var(--color-foreground);
   padding: 0.8rem 1rem;
@@ -99,6 +82,7 @@
   color: #fff;
   border: none;
   font-weight: var(--weight-semibold);
+  margin-right: auto;
 }
 
 .nav__link--cta:hover {
@@ -109,8 +93,7 @@
 /*  */
 .profile-btn {
   position: relative;
-
-  /* overflow: hidden; */
+  margin-left: auto;
   border: none;
   padding: 0;
 }

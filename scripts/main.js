@@ -30,5 +30,5 @@ profileBtn.addEventListener("click", () => {
 });
 
 document.querySelector("main").addEventListener("click", () => {
-  navDropdown.classList.toggle("active");
+  navDropdown.classList.remove("active");
 });
