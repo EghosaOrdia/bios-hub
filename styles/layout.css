@@ -157,8 +157,14 @@
 
 .dropdown__link {
   display: flex;
+  align-items: center;
+  gap: 0.4rem;
   color: #fff;
   padding: 0.3rem 1rem;
+
+  img {
+    width: 20px;
+  }
 }
 
 .dropdown__logout:hover {
