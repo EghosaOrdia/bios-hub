@@ -31,6 +31,10 @@
   .section__list--grid-3 {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .divider-line {
+    display: block;
+  }
 }
 /* =========================================================
    TABLET — min-width: 640px

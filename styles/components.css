@@ -107,6 +107,16 @@
   scroll-margin-top: 100px;
 }
 
+.section--how {
+  /* background: linear-gradient(
+    to bottom,
+    #030712,
+   #111827, 
+   #000000
+    );
+    */
+}
+
 /* Section Titles */
 .section__title {
   position: relative;
@@ -144,21 +154,68 @@
   filter: drop-shadow(0 0 5px var(--color-primary-glow));
 }
 
+.step-card__icon {
+  width: 26px;
+  height: 26px;
+}
+
 .card__title {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
   font-weight: var(--weight-semibold);
   color: var(--color-foreground);
 }
 
 .card__text {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--color-muted-foreground);
   line-height: 1.5;
 }
 
 /* Step Cards (How it Works) */
 .card--step {
-  padding: 1.5rem 2rem;
+  position: relative;
+  padding: 2.7rem 2rem 1.5rem 2rem;
+  border-radius: 1rem;
+  background: linear-gradient(to bottom right, #111827, #030712);
+  border: 1px solid #1f2937;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10;
+}
+
+.badge {
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  padding: 1rem;
+  border-radius: 9999px;
+  background: linear-gradient(to bottom right, #f97316, #ef4444);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.25),
+    0 4px 6px -2px rgba(249, 115, 22, 0.5);
+  font-size: 1.5rem;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accent-box {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(
+    to bottom right,
+    rgba(249, 115, 22, 0.2),
+    rgba(239, 68, 36, 0.1)
+  );
+  border: 1px solid rgba(249, 115, 22, 0.3);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.group:hover .accent-box {
+  transform: scale(1.1);
 }
 
 .card__step-num {
@@ -168,10 +225,51 @@
   font-weight: var(--weight-bold);
 }
 
+.corner-accent {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-bottom: 2px solid rgba(249, 115, 22, 0.3);
+  border-right: 2px solid rgba(249, 115, 22, 0.3);
+
+  transition: border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.group:hover .corner-accent {
+  border-bottom-color: #f97316;
+  border-right-color: #f97316;
+}
+
+.divider-line {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #1f2937, transparent);
+  transform: translateX(50%);
+  z-index: -10;
+}
+
 article.card {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.svgiconcontainer {
+  width: 50px;
+  height: 50px;
+}
+
+.svgicon {
+  font-size: 1rem;
+  width: 100%;
+  height: 100%;
+  color: #030712;
 }
 /* =========================================================
    TESTIMONIALS

@@ -24,7 +24,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="../styles/main.css" />
-
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Scripts -->
     <script defer src="../scripts/handleSidebar.js"></script>
   </head>
@@ -133,27 +133,76 @@
         </div>
 
         <div class="admin-stats">
-          <div class="admin__stat">
+          <div class="group admin__stat bios-uploads">
+            <div class="stats__header">
+              <div class="icon-box">
+                <img src="images/icons/upload.svg" alt="file upload icon" />
+              </div>
+
+              <div class="pill-badge">
+                <img src="" alt="" />
+                <span>+12%</span>
+              </div>
+            </div>
+
+            <span class="stat__value">12</span>
             <h2 class="stat">Total BIOS Uploads</h2>
-            <span>12</span>
           </div>
 
-          <div class="admin__stat">
+          <div class="group admin__stat total-downloads">
+            <div class="stats__header">
+              <div class="icon-box">
+                <img
+                  src="images/icons/download-alt.svg"
+                  alt="file download icon"
+                />
+              </div>
+
+              <div class="pill-badge">
+                <img src="" alt="" />
+                <span>+28%</span>
+              </div>
+            </div>
+
+            <span class="stat__value">1,204</span>
             <h2>Total Downloads</h2>
-            <span>1,204</span>
           </div>
 
-          <div class="admin__stat">
+          <div class="group admin__stat comments-made">
+            <div class="stats__header">
+              <div class="icon-box">
+                <img src="images/icons/chat.svg" alt="chat icon" />
+              </div>
+
+              <div class="pill-badge">
+                <img src="" alt="" />
+                <span>+28%</span>
+              </div>
+            </div>
+
+            <span class="stat__value">88</span>
             <h2>Comments Made</h2>
-            <span>88</span>
           </div>
 
-          <div class="admin__stat">
+          <div class="admin__stat average-rating">
+            <div class="stats__header">
+              <div class="icon-box">
+                <img src="images/icons/star.svg" alt="chat icon" />
+              </div>
+
+              <div class="pill-badge">
+                <img src="" alt="" />
+                <span>+28%</span>
+              </div>
+            </div>
+
+            <span class="stat__value">4.8</span>
             <h2>Average Rating</h2>
-            <span>4.8</span>
           </div>
         </div>
+      </section>
 
+      <!--  
         <div class="admin-section__navigation">
           <nav>
             <a href="#" class="admin__nav active">Uploaded BIOS</a>
@@ -231,7 +280,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <footer class="footer">
