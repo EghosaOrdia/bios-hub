@@ -10,11 +10,13 @@ const fetchData = async () => {
 
 const searchInput = document.getElementById("searchInput");
 const searchResults = document.getElementById("searchResults");
+const searchDiv = document.getElementById("searchDiv");
+const notFound = document.getElementById("notfound");
 
 let debounceTimer;
 
 const renderResults = (results) => {
-  searchResults.innerHTML = results
+  searchDiv.innerHTML = results
     .map((entry) => {
       return `<div class="search__result">
             <div>
@@ -34,10 +36,13 @@ const renderResults = (results) => {
           </div>`;
     })
     .join("");
+  notFound.classList.add("hidden");
+  if (results < 1) {
+    notFound.classList.remove("hidden");
+    searchDiv.classList.add("active");
+  }
 
-    if (!results)
-
-  searchResults.classList.toggle("active");
+  searchResults.classList.add("active");
 };
 
 searchInput.addEventListener("input", function () {
