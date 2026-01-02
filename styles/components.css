@@ -48,6 +48,7 @@
 .search__results {
   position: absolute;
   width: 100%;
+  max-height: 10rem;
   top: 100%;
   left: 0;
   background-color: var(--color-bg-alt);
@@ -57,6 +58,7 @@
   transform-origin: top;
   transition: transform 0.3s ease, opacity 0.3s ease;
   overflow: hidden;
+  overflow-y: scroll;
   opacity: 0;
   display: flex;
   flex-direction: column;
@@ -66,6 +68,34 @@
     transform: scaleY(1);
     opacity: 1;
   }
+}
+
+/* Hide default scrollbar for Chrome, Edge, Safari */
+.search__results::-webkit-scrollbar {
+  width: 0px; /* completely hide */
+  background: transparent;
+}
+
+/* For Firefox */
+.search__results {
+  scrollbar-width: thin; /* thin, auto, none */
+  scrollbar-color: #ff6f61 transparent; /* thumb and track */
+}
+
+/* Optional: Custom scrollbar track and thumb */
+.search__results::-webkit-scrollbar {
+  width: 8px; /* width of the scrollbar */
+}
+
+.search__results::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+
+.search__results::-webkit-scrollbar-thumb {
+  background-color: #ff6f61;
+  border-radius: 4px;
+  border: 2px solid #f0f0f0; /* padding around thumb */
 }
 
 .search__result {
