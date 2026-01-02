@@ -52,17 +52,37 @@
   left: 0;
   background-color: var(--color-bg-alt);
   border-radius: 0.75rem;
-  padding: 1.75rem;
   border: 1px solid var(--color-border);
   transform: scaleY(0);
   transform-origin: top;
   transition: transform 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
   opacity: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  &.active {
+    transform: scaleY(1);
+    opacity: 1;
+  }
 }
 
-.search__results.active {
-  transform: scaleY(1);
-  opacity: 1;
+.search__result {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-bg);
+  }
+}
+
+.search__value {
+  color: var(--color-muted-foreground);
+  font-size: 1rem;
 }
 
 .nav__link {
