@@ -24,22 +24,6 @@
 @media (min-width: 641px) and (max-width: 1024px) {
 }
 @media (min-width: 1025px) {
-  .section__list--grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .section__list--grid-3 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .divider-line {
-    display: block;
-  }
-}
-/* =========================================================
-   TABLET — min-width: 640px
-   ========================================================= */
-@media (min-width: 640px) {
   .header {
     padding: 1.2rem 2rem;
   }
@@ -120,16 +104,22 @@
     margin-left: auto;
   }
 
+  .section__list--grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section__list--grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .divider-line {
+    display: block;
+  }
+
   .footer {
     flex-direction: row;
     padding: 2rem;
     text-align: center;
     align-items: center;
   }
-}
-
-/* =========================================================
-   SMALL DESKTOP — min-width: 1024px
-   ========================================================= */
-@media (min-width: 1024px) {
 }

@@ -31,109 +31,111 @@
   <body class="admin-body">
     <div class="overlay"></div>
 
-    <!-- ================= HEADER ================= -->
+    <aside class="admin-aside" id="asidebar">
+      <div class="aside-header">
+        <div class="header__logo">
+          <a href="#" class="logo__link">
+            <img
+              src="../images/logo-dark.svg"
+              alt="BIOS Hub logo"
+              class="logo__img"
+            />
+          </a>
+          <span class="logo__text">BIOS Hub</span>
+        </div>
+
+        <ul class="admin__links">
+          <li>
+            <a href="../index.html" class="admin__link">
+              <img
+                src="images/icons/home.svg"
+                alt="home icon"
+                class="admin-img admin-link__img"
+              />
+              <span class="admin-link__span">Back Home</span>
+            </a>
+          </li>
+          <li class="admin__link active">
+            <a href="#" class="admin__link">
+              <img
+                src="images/icons/dashboard.svg"
+                alt="grid icon"
+                class="admin-img admin-link__img"
+              />
+              <span class="admin-link__span">Dashboard</span>
+            </a>
+          </li>
+
+          <li class="admin__link">
+            <a href="profile.html" class="admin__link">
+              <img
+                src="images/icons/user.svg"
+                alt="user icon"
+                class="admin-img admin-link__img"
+              />
+              <span class="admin-link__span">User Profile</span>
+            </a>
+          </li>
+
+          <li class="admin__link">
+            <img
+              src="images/icons/file-upload.svg"
+              alt=""
+              class="admin-img admin-link__img"
+            />
+            <span class="admin-link__span">BIOS Files</span>
+          </li>
+          <li class="admin__link">
+            <img
+              src="images/icons/activity.svg"
+              alt=""
+              class="admin-img admin-link__img"
+            />
+            <span class="admin-link__span">My Activity</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="admin-actions">
+        <div class="admin-user">
+          <img
+            src="images/icons/dashboard.svg"
+            alt=""
+            class="admin__user-img"
+          />
+          <div>
+            <span class="admin-username">Username</span>
+            <span class="admin-user-type">BIOS Master</span>
+          </div>
+        </div>
+        <div class="admin__settings">
+          <img src="images/icons/gear.svg" alt="" class="admin-img" />
+          <span>Settings</span>
+        </div>
+        <div class="admin__logout">
+          <img src="images/icons/logout.svg" alt="" class="admin-img" />
+          <span>Logout</span>
+        </div>
+      </div>
+    </aside>
 
     <main class="admin-main">
       <button class="sidebar-toggle" id="sidebarToggle">
         <img src="images/icons/sidebar-right.svg" alt="sidebar right icon" />
       </button>
-      <aside class="admin-aside" id="asidebar">
-        <div class="aside-header">
-          <div class="header__logo">
-            <a href="#" class="logo__link">
-              <img
-                src="../images/logo-dark.svg"
-                alt="BIOS Hub logo"
-                class="logo__img"
-              />
-            </a>
-            <span class="logo__text">BIOS Hub</span>
-          </div>
-
-          <ul class="admin__links">
-            <li>
-              <a href="../index.html" class="admin__link">
-                <img
-                  src="images/icons/home.svg"
-                  alt=""
-                  class="admin-img admin-link__img"
-                />
-                <span class="admin-link__span">Back Home</span>
-              </a>
-            </li>
-            <li class="admin__link active">
-              <img
-                src="images/icons/dashboard.svg"
-                alt=""
-                class="admin-img admin-link__img"
-              />
-              <span class="admin-link__span">Dashboard</span>
-            </li>
-            <li class="admin__link">
-              <img
-                src="images/icons/user.svg"
-                alt=""
-                class="admin-img admin-link__img"
-              />
-              <span class="admin-link__span">User Profile</span>
-            </li>
-            <li class="admin__link">
-              <img
-                src="images/icons/file-upload.svg"
-                alt=""
-                class="admin-img admin-link__img"
-              />
-              <span class="admin-link__span">BIOS Files</span>
-            </li>
-            <li class="admin__link">
-              <img
-                src="images/icons/activity.svg"
-                alt=""
-                class="admin-img admin-link__img"
-              />
-              <span class="admin-link__span">My Activity</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="admin-actions">
-          <div class="admin-user">
-            <img
-              src="images/icons/dashboard.svg"
-              alt=""
-              class="admin__user-img"
-            />
-            <div>
-              <span class="admin-username">Username</span>
-              <span class="admin-user-type">BIOS Master</span>
-            </div>
-          </div>
-          <div class="admin__settings">
-            <img src="images/icons/gear.svg" alt="" class="admin-img" />
-            <span>Settings</span>
-          </div>
-          <div class="admin__logout">
-            <img src="images/icons/logout.svg" alt="" class="admin-img" />
-            <span>Logout</span>
-          </div>
-        </div>
-      </aside>
 
       <section class="admin-section-main">
         <div class="admin-section__heading">
           <div class="admin-section__meta">
-            <h1 class="admin-section__header">User Profile</h1>
+            <h1 class="admin-section__header">Dashboard</h1>
             <p class="admin-section__subtext">
               Manage Your contributions and Settings
             </p>
           </div>
-          <button class="admin-button admin-section__button">
-            Edit Profile
-          </button>
         </div>
 
         <div class="admin-stats">
-          <div class="group admin__stat bios-uploads">
+          <div class="admin__stat bios-uploads">
             <div class="stats__header">
               <div class="icon-box">
                 <img src="images/icons/upload.svg" alt="file upload icon" />
@@ -149,7 +151,7 @@
             <h2 class="stat">Total BIOS Uploads</h2>
           </div>
 
-          <div class="group admin__stat total-downloads">
+          <div class="admin__stat total-downloads">
             <div class="stats__header">
               <div class="icon-box">
                 <img
@@ -201,8 +203,7 @@
           </div>
         </div>
       </section>
-
-      <!--  
+      <!-- 
         <div class="admin-section__navigation">
           <nav>
             <a href="#" class="admin__nav active">Uploaded BIOS</a>
@@ -280,16 +281,17 @@
             </div>
           </div>
         </div>
-      </section> -->
-    </main>
+      </section>
+      -->
 
-    <footer class="footer">
-      <p class="footer__text">© 2025 BIOS Hub. All rights reserved.</p>
-      <nav class="footer--nav">
-        <a class="nav__link">Privacy</a>
-        <a class="nav__link">Terms</a>
-        <a class="nav__link">Contact</a>
-      </nav>
-    </footer>
+      <footer class="footer">
+        <p class="footer__text">© 2025 BIOS Hub. All rights reserved.</p>
+        <nav class="footer--nav">
+          <a class="nav__link">Privacy</a>
+          <a class="nav__link">Terms</a>
+          <a class="nav__link">Contact</a>
+        </nav>
+      </footer>
+    </main>
   </body>
 </html>

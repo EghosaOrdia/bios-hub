@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile - BIOS Hub</title>
+
+    <meta
+      name="description"
+      content="Manage your BIOS Hub profile, uploaded files, and activity. View and organize your BIOS submissions and contributions."
+    />
+    <meta property="og:site_name" content="BIOS Hub" />
+    <meta property="og:title" content="Admin Dashboard - BIOS Hub" />
+    <meta
+      property="og:description"
+      content="Manage your BIOS Hub profile, uploaded files, and activity. View and organize your BIOS submissions and contributions."
+    />
+    <meta
+      property="og:url"
+      content="https://www.bioshub.net/admin/profilehtml"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <!-- Scripts -->
+    <script defer src="../scripts/handleSidebar.js"></script>
+  </head>
+  <body class="admin-body">
+    <div class="overlay"></div>
+
+    <aside class="admin-aside" id="asidebar">
+      <div class="aside-header">
+        <div class="header__logo">
+          <a href="#" class="logo__link">
+            <img
+              src="../images/logo-dark.svg"
+              alt="BIOS Hub logo"
+              class="logo__img"
+            />
+          </a>
+          <span class="logo__text">BIOS Hub</span>
+        </div>
+
+        <ul class="admin__links">
+          <li>
+            <a href="../index.html" class="admin__link">
+              <img
+                src="images/icons/home.svg"
+                alt=""
+                class="admin-img admin-link__img"
+              />
+              <span class="admin-link__span">Back Home</span>
+            </a>
+          </li>
+          <li class="admin__link active">
+            <a href="index.html" class="admin__link">
+              <img
+                src="images/icons/dashboard.svg"
+                alt="grid icon"
+                class="admin-img admin-link__img"
+              />
+              <span class="admin-link__span">Dashboard</span>
+            </a>
+          </li>
+          <li class="admin__link">
+            <img
+              src="images/icons/user.svg"
+              alt=""
+              class="admin-img admin-link__img"
+            />
+            <span class="admin-link__span">User Profile</span>
+          </li>
+          <li class="admin__link">
+            <img
+              src="images/icons/file-upload.svg"
+              alt=""
+              class="admin-img admin-link__img"
+            />
+            <span class="admin-link__span">BIOS Files</span>
+          </li>
+          <li class="admin__link">
+            <img
+              src="images/icons/activity.svg"
+              alt=""
+              class="admin-img admin-link__img"
+            />
+            <span class="admin-link__span">My Activity</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="admin-actions">
+        <div class="admin-user">
+          <img
+            src="images/icons/dashboard.svg"
+            alt=""
+            class="admin__user-img"
+          />
+          <div>
+            <span class="admin-username">Username</span>
+            <span class="admin-user-type">BIOS Master</span>
+          </div>
+        </div>
+        <div class="admin__settings">
+          <img src="images/icons/gear.svg" alt="" class="admin-img" />
+          <span>Settings</span>
+        </div>
+        <div class="admin__logout">
+          <img src="images/icons/logout.svg" alt="" class="admin-img" />
+          <span>Logout</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="admin-main">
+      <button class="sidebar-toggle" id="sidebarToggle">
+        <img src="images/icons/sidebar-right.svg" alt="sidebar right icon" />
+      </button>
+
+      <section class="admin-section-main">
+        <div class="admin-section__heading">
+          <div class="admin-section__meta">
+            <h1 class="admin-section__header">User Profile</h1>
+            <p class="admin-section__subtext">
+              Manage Your contributions and Settings
+            </p>
+          </div>
+          <button class="admin-button admin-section__button">
+            Edit Profile
+          </button>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p class="footer__text">© 2025 BIOS Hub. All rights reserved.</p>
+        <nav class="footer--nav">
+          <a class="nav__link">Privacy</a>
+          <a class="nav__link">Terms</a>
+          <a class="nav__link">Contact</a>
+        </nav>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,3 +1,4 @@
 /* 5️⃣ Responsive — mobile, tablet, small desktop breakpoints */
 @import url("layout.css");
+@import url("components.css");
 @import url("responsive.css");
