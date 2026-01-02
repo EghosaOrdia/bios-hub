@@ -34,9 +34,10 @@ const renderResults = (results) => {
           </div>`;
     })
     .join("");
-  console.log(results);
 
-  searchResults.classList.toggle("active", results.length > 0);
+    if (!results)
+
+  searchResults.classList.toggle("active");
 };
 
 searchInput.addEventListener("input", function () {
