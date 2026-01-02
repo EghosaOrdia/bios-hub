@@ -37,6 +37,7 @@ const renderResults = (results) => {
     })
     .join("");
   notFound.classList.add("hidden");
+
   if (results < 1) {
     notFound.classList.remove("hidden");
     searchDiv.classList.add("active");
