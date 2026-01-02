@@ -505,4 +505,14 @@
   }
 }
 
+.comment-history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+}
 
+.upload-dashboard-nav__icon {
+  width: 3rem;
+  height: 3rem;
+}
