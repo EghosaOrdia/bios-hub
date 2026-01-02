@@ -22,6 +22,7 @@
 
     <!-- Scripts -->
     <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/handleBrowseData.js"></script>
   </head>
   <body>
     <div class="overlay"></div>
@@ -54,9 +55,10 @@
           type="text"
           placeholder="Search BIOS files by model, brand, chipset..."
           class="search__input"
+          id="searchInput"
+          name="search-input"
         />
         <button class="search__btn button button--primary">Search</button>
-        <div class="search__results"></div>
       </div>
 
       <nav id="menuNav" class="nav">
