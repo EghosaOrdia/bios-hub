@@ -76,7 +76,7 @@
   justify-content: space-between;
   background: linear-gradient(
     to bottom,
-    /* bg-gradient-to-b */ #0f0f0f,
+    /* bg-gradient-to-b */ #030712,
     /* from-gray-950 */ #000000 /* to-black */
   );
   border-right: 1px solid var(--color-border);
@@ -95,11 +95,17 @@
 
 .admin-section__navigation {
   margin-top: 3rem;
+  border-bottom: 1px solid var(--color-border);
 
   nav {
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
-    border-bottom: 1px solid var(--color-border);
   }
+}
+
+.admin-search {
+  margin-top: 2rem;
+  border-radius: var(--radius-md);
+  overflow: hidden;
 }

@@ -1,23 +1,22 @@
 .header__logo {
-  margin-bottom: 2rem;
-}
-
-.aside-header {
-  padding: 2rem;
+  padding: 2rem 2rem 1.5rem;
 }
 
 .admin-actions {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding: 2rem;
+  gap: 0.5rem;
+  padding: 1rem 1rem 2rem;
+  border-top: 1px solid var(--color-border);
 }
 
 .admin__links {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding: 1rem;
   list-style-type: none;
+  border-top: 1px solid var(--color-border);
 }
 
 .admin__link {
@@ -25,14 +24,26 @@
   align-items: center;
   gap: 1rem;
   color: inherit;
-}
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  transition: all 0.2s ease;
 
-.admin__link:hover {
-  color: var(--color-primary);
+  &:hover {
+    color: #ffffff;
+    background: rgba(31, 41, 55, 0.5);
+  }
 }
-
 .admin__link.active {
-  color: var(--color-primary);
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  background: linear-gradient(
+    90deg,
+    rgba(6, 182, 212, 0.2),
+    rgba(59, 130, 246, 0.1)
+  );
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(6, 182, 212, 0.5);
+  color: #22d3ee;
   font-weight: var(--weight-bold);
 }
 
@@ -40,12 +51,31 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  color: #9ca3af;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: #ffffff;
+    background: rgba(31, 41, 55, 0.5);
+  }
 }
 
 .admin__logout {
   display: flex;
   align-items: center;
   gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  color: #ef4444;
+  cursor: pointer;
+
+  &:hover {
+    color: #fca5a5;
+    background: rgba(239, 68, 68, 0.1);
+  }
 }
 
 .admin-img {
@@ -57,12 +87,11 @@
   gap: 1rem;
   align-items: center;
   padding: 0.75rem 1rem;
-  border-radius: 0.5rem; /* rounded-lg */
+  border-radius: 0.5rem;
   background: linear-gradient(
     to right,
     rgba(249, 115, 22, 0.1),
-    /* from-orange-500/10 → 10% opacity */ rgba(239, 68, 68, 0.05)
-      /* to-red-500/5 → 5% opacity */
+    rgba(239, 68, 68, 0.05)
   );
   border: 1px solid rgba(249, 115, 22, 0.2);
 
@@ -82,6 +111,7 @@
 
 .admin__user-img {
   width: 30px;
+  border-radius: 100%;
 }
 
 .admin-section__heading {
@@ -193,13 +223,17 @@
 .pill-badge {
   display: flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.5rem;
   padding: 0.25rem 0.5rem;
   border-radius: 9999px;
   background-color: rgba(16, 185, 129, 0.2);
   color: #34d399;
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.pill-icon {
+  width: 18px;
 }
 
 .total-downloads {
@@ -315,11 +349,12 @@
 .admin__nav {
   padding: 1rem;
   font-size: 0.9rem;
+  color: #22d3ee;
   font-weight: var(--weight-medium);
 }
 
 .admin__nav.active {
-  border-bottom: 3px solid var(--color-primary);
+  border-bottom: 3px solid #06b6d4;
 }
 
 .admin__nav:hover {
@@ -368,10 +403,11 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
-  background-color: var(--color-dark-bg);
+  background: linear-gradient(to bottom right, #111827, #030712);
+  border: 1px solid #1f2937;
+  transition: all 0.3s ease;
   padding: 1.5rem;
   border-radius: var(--radius-md);
-  border: 1px solid var(--color-border);
 }
 
 .file-name-version {
@@ -380,6 +416,9 @@
   gap: 0.3rem;
 
   .title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     font-weight: var(--weight-semibold);
   }
 
@@ -388,14 +427,39 @@
   }
 }
 
+.admin-verified {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.3rem;
+  background-color: #22c55e33;
+  color: #4ade80;
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-lg);
+}
+
+.admin-status {
+  font-size: 0.9rem;
+}
+
 .file__rating {
   display: flex;
   gap: 0.5rem;
   align-items: center;
 }
 
-.rating__stars {
-  color: var(--color-accent);
+.admin-rating__stars {
+  display: flex;
+  gap: 0.3rem;
+
+  .star-icon {
+    color: var(--color-border);
+  }
+
+  .star-icon.active {
+    fill: #facc15;
+    color: #facc15;
+  }
 }
 
 .file__uploaded {
@@ -406,6 +470,10 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+
+  .download-icon {
+    color: #06b6d4;
+  }
 }
 
 .file__actions {
@@ -422,4 +490,23 @@
 
 .file-action__btn:hover {
   transform: scale(1.02);
+}
+
+.admin-search__input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: border 0.4s ease;
+  outline: none;
+
+  &:focus {
+    border: 1px solid var(--color-primary);
+  }
+}
+
+/* Utilities */
+.lucide-icon {
+  width: 18px;
+  height: 18px;
 }

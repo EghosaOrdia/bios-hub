@@ -51,50 +51,30 @@
         <ul class="admin__links">
           <li>
             <a href="../index.html" class="admin__link">
-              <img
-                src="images/icons/home.svg"
-                alt="home icon"
-                class="admin-img admin-link__img"
-              />
+              <i data-lucide="house" class="lucide-icon"></i>
               <span class="admin-link__span">Back Home</span>
             </a>
           </li>
-          <li class="admin__link active">
-            <a href="#" class="admin__link">
-              <img
-                src="images/icons/dashboard.svg"
-                alt="grid icon"
-                class="admin-img admin-link__img"
-              />
+          <li class="active">
+            <a href="#" class="admin__link active">
+              <i data-lucide="layout-panel-left" class="lucide-icon"></i>
               <span class="admin-link__span">Dashboard</span>
             </a>
           </li>
 
-          <li class="admin__link">
+          <li>
             <a href="profile.html" class="admin__link">
-              <img
-                src="images/icons/user.svg"
-                alt="user icon"
-                class="admin-img admin-link__img"
-              />
+              <i data-lucide="user" class="lucide-icon"></i>
               <span class="admin-link__span">User Profile</span>
             </a>
           </li>
 
           <li class="admin__link">
-            <img
-              src="images/icons/file-upload.svg"
-              alt=""
-              class="admin-img admin-link__img"
-            />
+            <i data-lucide="file" class="lucide-icon"></i>
             <span class="admin-link__span">BIOS Files</span>
           </li>
           <li class="admin__link">
-            <img
-              src="images/icons/activity.svg"
-              alt=""
-              class="admin-img admin-link__img"
-            />
+            <i data-lucide="chart-area" class="lucide-icon"></i>
             <span class="admin-link__span">My Activity</span>
           </li>
         </ul>
@@ -102,14 +82,9 @@
 
       <div class="admin-actions">
         <div class="admin-user">
-          <img
-            src="images/icons/dashboard.svg"
-            alt=""
-            class="admin__user-img"
-          />
+          <img src="../images/amy.webp" alt="" class="admin__user-img" />
           <div>
-            <span class="admin-username">Username</span>
-            <span class="admin-user-type">BIOS Master</span>
+            <span class="admin-username">Amy Fowler</span>
           </div>
         </div>
         <div class="admin__settings">
@@ -117,13 +92,13 @@
           <span>Settings</span>
         </div>
         <div class="admin__logout">
-          <img src="images/icons/logout.svg" alt="" class="admin-img" />
+          <i data-lucide="log-out" class="logout-icon"></i>
           <span>Logout</span>
         </div>
       </div>
     </aside>
 
-    <main class="admin-main">
+    <main class="admin-main custom-scroll">
       <button class="sidebar-toggle" id="sidebarToggle">
         <img src="images/icons/sidebar-right.svg" alt="sidebar right icon" />
       </button>
@@ -146,7 +121,11 @@
               </div>
 
               <div class="pill-badge">
-                <img src="" alt="" />
+                <img
+                  src="images/icons/activity.svg"
+                  alt="uptrend icon"
+                  class="pill-icon"
+                />
                 <span>+12%</span>
               </div>
             </div>
@@ -165,7 +144,11 @@
               </div>
 
               <div class="pill-badge">
-                <img src="" alt="" />
+                <img
+                  src="images/icons/activity.svg"
+                  alt="uptrend icon"
+                  class="pill-icon"
+                />
                 <span>+28%</span>
               </div>
             </div>
@@ -181,7 +164,11 @@
               </div>
 
               <div class="pill-badge">
-                <img src="" alt="" />
+                <img
+                  src="images/icons/activity.svg"
+                  alt="uptrend icon"
+                  class="pill-icon"
+                />
                 <span>+28%</span>
               </div>
             </div>
@@ -197,7 +184,11 @@
               </div>
 
               <div class="pill-badge">
-                <img src="" alt="" />
+                <img
+                  src="images/icons/activity.svg"
+                  alt="uptrend icon"
+                  class="pill-icon"
+                />
                 <span>+28%</span>
               </div>
             </div>
@@ -206,8 +197,7 @@
             <h2>Average Rating</h2>
           </div>
         </div>
-      </section>
-      <!-- 
+
         <div class="admin-section__navigation">
           <nav>
             <a href="#" class="admin__nav active">Uploaded BIOS</a>
@@ -215,6 +205,58 @@
             <a href="#" class="admin__nav">Settings</a>
           </nav>
         </div>
+
+        <div class="admin-search">
+          <img src="" alt="" class="admin-search__icon" />
+          <input
+            type="text"
+            placeholder="Search BIOS files"
+            class="admin-search__input"
+          />
+        </div>
+
+        <div class="admin-files">
+          <div class="admin-file">
+            <div class="file-name-version">
+              <div class="title">
+                <span>ASUS ROG Maximus Z790 Hero</span>
+
+                <div class="admin-status-badge admin-verified">
+                  <i data-lucide="check" class="verified-icon"></i>
+                  <span id="adminStatus" class="admin-status">Verified</span>
+                </div>
+              </div>
+              <span class="version">Version: 1402</span>
+            </div>
+            <div class="file__rating">
+              <div class="admin-rating__stars">
+                <i data-lucide="star" class="lucide-icon star-icon active"></i>
+                <i data-lucide="star" class="lucide-icon star-icon active"></i>
+                <i data-lucide="star" class="lucide-icon star-icon active"></i>
+                <i data-lucide="star" class="lucide-icon star-icon active"></i>
+                <i data-lucide="star" class="lucide-icon star-icon"></i>
+              </div>
+              <span>(4.7)</span>
+            </div>
+            <div class="file__downloads">
+              <i data-lucide="download" class="lucide-icon download-icon"></i>
+              <span>812</span>
+            </div>
+            <div class="file__uploaded">
+              <span>Oct 26, 2025</span>
+            </div>
+            <div class="file__actions">
+              <button class="file-action__btn edit-button" id="editButton">
+                <i data-lucide="pencil" class="lucide-icon edit-icon"></i>
+              </button>
+              <button class="file-action__btn delete-button" id="deleteFile">
+                <i data-lucide="trash" class="lucide-icon delete-icon"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 
 
         <div class="admin-section__actions">
           <button class="admin__button sort" id="sortTitle">
@@ -225,66 +267,7 @@
           </button>
         </div>
 
-        <div class="admin-files">
-          <div class="admin-file">
-            <div class="file-name-version">
-              <span class="title">ASUS ROG Maximus Z790 Hero</span>
-              <span class="version">Version: 1402</span>
-            </div>
-            <div class="file__rating">
-              <fieldset class="rating__stars">
-                <input type="radio" id="star5" name="rating" value="5" /><label
-                  for="star5"
-                  title="5 stars"
-                ></label>
-                <input type="radio" id="star4" name="rating" value="4" /><label
-                  for="star4"
-                  title="4 stars"
-                ></label>
-                <input type="radio" id="star3" name="rating" value="3" /><label
-                  for="star3"
-                  title="3 stars"
-                ></label>
-                <input type="radio" id="star2" name="rating" value="2" /><label
-                  for="star2"
-                  title="2 stars"
-                ></label>
-                <input type="radio" id="star1" name="rating" value="1" /><label
-                  for="star1"
-                  title="1 star"
-                ></label>
-              </fieldset>
-              <span>(4.7)</span>
-            </div>
-            <div class="file__downloads">
-              <img
-                src="images/icons/download.svg"
-                alt=""
-                class="file__downloads__icon admin-img"
-              />
-              <span>812</span>
-            </div>
-            <div class="file__uploaded">
-              <span>Oct 26, 2025</span>
-            </div>
-            <div class="file__actions">
-              <button class="file-action__btn edit-button" id="editButton">
-                <img
-                  src="images/icons/edit.svg"
-                  alt="edit file upload"
-                  class="admin-img"
-                />
-              </button>
-              <button class="file-action__btn delete-button" id="deleteFile">
-                <img
-                  src="images/icons/delete.svg"
-                  alt="delete uploaded file"
-                  class="admin-img"
-                />
-              </button>
-            </div>
-          </div>
-        </div>
+   
       </section>
       -->
 
@@ -297,5 +280,10 @@
         </nav>
       </footer>
     </main>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
