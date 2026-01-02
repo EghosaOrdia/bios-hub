@@ -9,14 +9,21 @@ const fetchData = async () => {
 };
 
 const searchInput = document.getElementById("searchInput");
+const searchResults = document.getElementById("searchResults");
+
 let debounceTimer;
 
 searchInput.addEventListener("input", function () {
-  console.log(searchInput.value);
-
   clearTimeout(debounceTimer);
 
   debounceTimer = setTimeout(async () => {
-    const allData = fetchData();
-  }, 2000);
+    if (searchInput.value.trim() == "") {
+      searchResults.classList.remove("active");
+      return;
+    }
+
+    searchResults.classList.add("active");
+
+    const allData = await fetchData();
+  }, 600);
 });

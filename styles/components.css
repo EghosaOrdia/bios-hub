@@ -54,6 +54,15 @@
   border-radius: 0.75rem;
   padding: 1.75rem;
   border: 1px solid var(--color-border);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.search__results.active {
+  transform: scaleY(1);
+  opacity: 1;
 }
 
 .nav__link {
