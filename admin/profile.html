@@ -102,18 +102,80 @@
         <img src="images/icons/sidebar-right.svg" alt="sidebar right icon" />
       </button>
 
-      <section class="admin-section-main">
-        <div class="admin-section__heading">
-          <div class="admin-section__meta">
-            <h1 class="admin-section__header">User Profile</h1>
-            <p class="admin-section__subtext">
-              Manage Your contributions and Settings
-            </p>
+      <section class="admin-section-main admin__profile">
+        <div class="profile__header">
+          <div class="profile__cover">
+            <div class="cover__photo">
+              <div class="cover__blur1"></div>
+              <div class="cover__blur2"></div>
+            </div>
+            <button class="cover-photo__btn" id="changeCoverPhotoBtn">
+              <i data-lucide="camera" class="lucide-icon"></i>
+            </button>
           </div>
-          <button class="admin-button admin-section__button">
-            Edit Profile
-          </button>
+
+          <div class="profile__photo">
+            <div class="photo__content">
+              <div class="profile__info">
+                <div class="info__content">
+                  <div class="info__photo">
+                    AF
+
+                    <button class="profile-photo__btn">
+                      <i data-lucide="camera" class="lucide-icon"></i>
+                    </button>
+                  </div>
+                  <div class="info__text">
+                    <h1 class="info__username">@AmyFouler</h1>
+                    <div class="info__titles">
+                      <div class="title__biosmaster">BIOS Master</div>
+                      <div class="title__contributor">
+                        <i data-lucide="award" class="lucide-icon"></i>
+                        <span>Verified Contributor</span>
+                      </div>
+                    </div>
+                    <div class="info__bio">
+                      Tech enthusiast and BIOS expert. Helping the community
+                      with verified firmware updates since 2023. Passionate
+                      about hardware optimization and system stability.
+                    </div>
+                    <div class="info__contact">
+                      <div class="contact__badge">
+                        <i data-lucide="mail" class="lucide-icon info-mail"></i>
+                        <span>user@bioshub.com</span>
+                      </div>
+                      <div class="contact__badge">
+                        <i
+                          data-lucide="map-pin"
+                          class="lucide-icon info-location"
+                        ></i>
+                        <span>San Francisco, CA</span>
+                      </div>
+                      <div class="contact__badge">
+                        <i
+                          data-lucide="calendar-days"
+                          class="lucide-icon info-joined"
+                        ></i>
+                        <span>Joined January 2026</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="info__actions">
+                  <button class="profile__button profile-edit">
+                    <i data-lucide="pencil" class="lucide-icon"></i>
+                    <span>Edit Profile</span>
+                  </button>
+                  <button class="profile__button profile-share">
+                    <i data-lucide="share-2" class="lucide-icon"></i>
+                    <span>Share</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="profile__body"></div>
       </section>
 
       <footer class="footer">
