@@ -406,6 +406,13 @@
   border-radius: var(--radius-md);
 }
 
+.admin-file__btn {
+  margin-left: auto;
+  background: linear-gradient(to right, #06b6d4, #3b82f6);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-md);
+}
+
 .file-name-version {
   display: flex;
   flex-direction: column;
