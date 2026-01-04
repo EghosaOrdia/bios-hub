@@ -38,74 +38,76 @@
       <div class="gradient-2"></div>
     </div>
 
-    <aside class="admin-aside" id="asidebar">
-      <div class="aside-header">
-        <div class="header__logo">
-          <a href="#" class="logo__link">
-            <img
-              src="../images/logo-dark.svg"
-              alt="BIOS Hub logo"
-              class="logo__img"
-            />
-          </a>
-          <span class="logo__text">BIOS Hub</span>
+    <aside class="admin-aside open" id="asidebar">
+      <div class="aside-inner">
+        <div class="aside-header">
+          <div class="header__logo">
+            <a href="#" class="logo__link">
+              <img
+                src="../images/logo-dark.svg"
+                alt="BIOS Hub logo"
+                class="logo__img"
+              />
+            </a>
+            <span class="logo__text">BIOS Hub</span>
+          </div>
+
+          <ul class="admin__links">
+            <li>
+              <a href="../index.html" class="admin__link">
+                <i data-lucide="undo" class="lucide-icon"></i>
+                <span class="admin-link__span">Back Home</span>
+              </a>
+            </li>
+            <li class="active">
+              <a href="#" class="admin__link active">
+                <i data-lucide="layout-panel-left" class="lucide-icon"></i>
+                <span class="admin-link__span">Dashboard</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="profile.html" class="admin__link">
+                <i data-lucide="user" class="lucide-icon"></i>
+                <span class="admin-link__span">User Profile</span>
+              </a>
+            </li>
+
+            <li class="admin__link">
+              <i data-lucide="file" class="lucide-icon"></i>
+              <span class="admin-link__span">BIOS Files</span>
+            </li>
+            <li class="admin__link">
+              <i data-lucide="chart-area" class="lucide-icon"></i>
+              <span class="admin-link__span">My Activity</span>
+            </li>
+          </ul>
         </div>
 
-        <ul class="admin__links">
-          <li>
-            <a href="../index.html" class="admin__link">
-              <i data-lucide="undo" class="lucide-icon"></i>
-              <span class="admin-link__span">Back Home</span>
-            </a>
-          </li>
-          <li class="active">
-            <a href="#" class="admin__link active">
-              <i data-lucide="layout-panel-left" class="lucide-icon"></i>
-              <span class="admin-link__span">Dashboard</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="profile.html" class="admin__link">
-              <i data-lucide="user" class="lucide-icon"></i>
-              <span class="admin-link__span">User Profile</span>
-            </a>
-          </li>
-
-          <li class="admin__link">
-            <i data-lucide="file" class="lucide-icon"></i>
-            <span class="admin-link__span">BIOS Files</span>
-          </li>
-          <li class="admin__link">
-            <i data-lucide="chart-area" class="lucide-icon"></i>
-            <span class="admin-link__span">My Activity</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="admin-actions">
-        <div class="admin-user">
-          <img src="../images/amy.webp" alt="" class="admin__user-img" />
-          <div>
-            <span class="admin-username">Amy Fowler</span>
+        <div class="admin-actions">
+          <div class="admin-user">
+            <img src="../images/amy.webp" alt="" class="admin__user-img" />
+            <div>
+              <span class="admin-username">Amy Fowler</span>
+            </div>
+          </div>
+          <div class="admin__settings">
+            <img src="images/icons/gear.svg" alt="" class="admin-img" />
+            <span>Settings</span>
+          </div>
+          <div class="admin__logout">
+            <i data-lucide="log-out" class="logout-icon"></i>
+            <span>Logout</span>
           </div>
         </div>
-        <div class="admin__settings">
-          <img src="images/icons/gear.svg" alt="" class="admin-img" />
-          <span>Settings</span>
-        </div>
-        <div class="admin__logout">
-          <i data-lucide="log-out" class="logout-icon"></i>
-          <span>Logout</span>
-        </div>
       </div>
-    </aside>
 
-    <main class="admin-main custom-scroll">
       <button class="sidebar-toggle" id="sidebarToggle">
         <img src="images/icons/sidebar-right.svg" alt="sidebar right icon" />
       </button>
+    </aside>
 
+    <main class="admin-main custom-scroll">
       <section class="admin-section-main">
         <div class="admin-section__heading">
           <div class="admin-section__meta">

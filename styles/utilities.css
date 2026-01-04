@@ -277,3 +277,32 @@
   width: 16px;
   color: #fff;
 }
+
+/* Toggle Sidebar */
+.sidebar-toggle {
+  position: absolute;
+  bottom: 0;
+  right: -5rem;
+  margin: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  z-index: 40;
+
+  background: linear-gradient(to bottom right, #06b6d4, #3b82f6);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.25),
+    0 10px 15px -3px rgba(6, 182, 212, 0.5);
+
+  img {
+    width: 26px;
+  }
+}
+
+.sidebar-toggle:hover {
+  transform: scale(1.05);
+}
