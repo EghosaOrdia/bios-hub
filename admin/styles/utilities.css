@@ -6,3 +6,10 @@
   width: 18px;
   height: 18px;
 }
+
+.admin-section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}

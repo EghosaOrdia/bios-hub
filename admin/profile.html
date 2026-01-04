@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="../styles/main.css" />
     <!-- Scripts -->
     <script defer src="../scripts/handleSidebar.js"></script>
+    <script defer src="scripts/main.js"></script>
   </head>
   <body class="admin-body">
     <div class="overlay"></div>
@@ -56,7 +57,7 @@
               </a>
             </li>
             <li class="active">
-              <a href="#" class="admin__link">
+              <a href="index.html" class="admin__link">
                 <i data-lucide="layout-panel-left" class="lucide-icon"></i>
                 <span class="admin-link__span">Dashboard</span>
               </a>
@@ -176,7 +177,130 @@
             </div>
           </div>
         </div>
-        <div class="profile__body"></div>
+        <div class="profile__body">
+          <div class="admin-section__navigation">
+            <nav>
+              <a href="#" class="admin__nav active" data-menu="overview"
+                >Overview</a
+              >
+              <a href="#" class="admin__nav" data-menu="activity">Activity</a>
+              <a href="#" class="admin__nav" data-menu="settings">Settings</a>
+            </nav>
+          </div>
+
+          <div
+            class="dashboard-navigation profile-navigation"
+            data-menu="overview"
+          >
+            <div class="stats__and__achievements">
+              <div class="stats">
+                <div class="stat reputation">
+                  <h2 class="stat__title">Reputation Points</h2>
+                  <span class="stat__value">2,847</span>
+                  <span class="stat__analytic">156 this month</span>
+                  <div class="stat__progresscontainer">
+                    <div class="stat__progressbar"></div>
+                  </div>
+                </div>
+                <div class="stat contributions">
+                  <h2 class="stat__title">Total Contribution</h2>
+                  <span class="stat__value">42</span>
+                  <span class="stat__analytic">+12 this month</span>
+                  <div class="stat__progresscontainer">
+                    <div class="stat__progressbar"></div>
+                  </div>
+                </div>
+                <div class="stat impact">
+                  <h2 class="stat__title">Community Impact</h2>
+                  <span class="stat__value">1,204</span>
+                  <span class="stat__analytic">users helped</span>
+                  <div class="stat__progresscontainer">
+                    <div class="stat__progressbar"></div>
+                  </div>
+                </div>
+                <div class="stat success">
+                  <h2 class="stat__title">Success Rate</h2>
+                  <span class="stat__value">98%</span>
+                  <span class="stat__analytic">verified uplaods</span>
+                  <div class="stat__progresscontainer">
+                    <div class="stat__progressbar"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="achievements">
+                <div class="admin-section__header achievements__header">
+                  <h2>Achievements</h2>
+                  <span>3 of 4 unlocked</span>
+                </div>
+
+                <div class="achievement__badges">
+                  <div class="achievement__badge first-upload">
+                    <div class="icon-box">
+                      <i data-lucide="zap" class="lucide-icon"></i>
+                    </div>
+                    <h3>First Upload</h3>
+                    <p>Uploaded your first BIOS</p>
+                  </div>
+                  <div class="achievement__badge top-contributor">
+                    <div class="icon-box">
+                      <i data-lucide="award" class="lucide-icon"></i>
+                    </div>
+                    <h3>Top Contributor</h3>
+                    <p>50+ verified uploads</p>
+                  </div>
+                  <div class="achievement__badge community-hero">
+                    <div class="icon-box">
+                      <i data-lucide="trending-up" class="lucide-icon"></i>
+                    </div>
+                    <h3>Community Hero</h3>
+                    <p>1000+ downloads helped</p>
+                  </div>
+                  <div class="achievement__badge perfectionist disabled">
+                    <div class="status-badge"></div>
+                    <div class="icon-box">
+                      <i data-lucide="target" class="lucide-icon"></i>
+                    </div>
+                    <h3>Perfectionist</h3>
+                    <p>Maintain 4.5+ rating</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="recent__activity">
+              <div class="admin-section__header recent-activity__header">
+                <h2>Recent Activity</h2>
+                <button>View All</button>
+              </div>
+
+              <div class="activity__feed">
+                <div class="feed__entry">
+                  <div class="icon-box"></div>
+                  <div class="feed__content">
+                    <h3>Uploaded new BIOS</h3>
+                    <p>
+                      <span>ASUS ROG Maximus Z790</span>
+                      <span>Version 1402</span>
+                    </p>
+
+                    <div>
+                      <i data-lucide="history" class="lucide-icon"></i>
+                      <span>2 hours ago</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button>Learn More Activity</button>
+            </div>
+          </div>
+          <div class="dashboard-navigation hidden" data-menu="activity">
+            <h1>Activity</h1>
+          </div>
+          <div class="dashboard-navigation hidden" data-menu="settings">
+            <h1>Settings</h1>
+          </div>
+        </div>
       </section>
 
       <footer class="footer">
