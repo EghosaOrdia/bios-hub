@@ -271,31 +271,167 @@
             <div class="recent__activity">
               <div class="admin-section__header recent-activity__header">
                 <h2>Recent Activity</h2>
-                <button>View All</button>
+                <button class="view-all-activity">View All</button>
               </div>
 
               <div class="activity__feed">
-                <div class="feed__entry">
-                  <div class="icon-box"></div>
+                <div class="feed__entry upload">
+                  <div class="icon-box">
+                    <i data-lucide="upload" class="lucide-icon"></i>
+                  </div>
                   <div class="feed__content">
-                    <h3>Uploaded new BIOS</h3>
-                    <p>
+                    <h3 class="feed__title">Uploaded new BIOS</h3>
+                    <p class="feed__details">
                       <span>ASUS ROG Maximus Z790</span>
                       <span>Version 1402</span>
                     </p>
 
-                    <div>
+                    <div class="feed__time">
+                      <i data-lucide="history" class="lucide-icon"></i>
+                      <span>2 hours ago</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="feed__entry comment">
+                  <div class="icon-box">
+                    <i data-lucide="message-circle" class="lucide-icon"></i>
+                  </div>
+                  <div class="feed__content">
+                    <h3 class="feed__title">Uploaded new BIOS</h3>
+                    <p class="feed__details">
+                      <span>ASUS ROG Maximus Z790</span>
+                      <span>Version 1402</span>
+                    </p>
+
+                    <div class="feed__time">
+                      <i data-lucide="history" class="lucide-icon"></i>
+                      <span>2 hours ago</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="feed__entry gamification">
+                  <div class="icon-box">
+                    <i data-lucide="star" class="lucide-icon"></i>
+                  </div>
+                  <div class="feed__content">
+                    <h3 class="feed__title">Uploaded new BIOS</h3>
+                    <p class="feed__details">
+                      <span>ASUS ROG Maximus Z790</span>
+                      <span>Version 1402</span>
+                    </p>
+
+                    <div class="feed__time">
+                      <i data-lucide="history" class="lucide-icon"></i>
+                      <span>2 hours ago</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="feed__entry milestone">
+                  <div class="icon-box">
+                    <i data-lucide="milestone" class="lucide-icon"></i>
+                  </div>
+                  <div class="feed__content">
+                    <h3 class="feed__title">Uploaded new BIOS</h3>
+                    <p class="feed__details">
+                      <span>ASUS ROG Maximus Z790</span>
+                      <span>Version 1402</span>
+                    </p>
+
+                    <div class="feed__time">
                       <i data-lucide="history" class="lucide-icon"></i>
                       <span>2 hours ago</span>
                     </div>
                   </div>
                 </div>
               </div>
-              <button>Learn More Activity</button>
+              <button class="loadmoreactivity">Learn More Activity</button>
             </div>
           </div>
-          <div class="dashboard-navigation hidden" data-menu="activity">
-            <h1>Activity</h1>
+
+          <div
+            class="dashboard-navigation recent__activity hidden"
+            data-menu="activity"
+          >
+            <div class="admin-section__header recent-activity__header">
+              <h2>Recent Activity</h2>
+            </div>
+
+            <div class="activity__feed">
+              <div class="feed__entry upload">
+                <div class="icon-box">
+                  <i data-lucide="upload" class="lucide-icon"></i>
+                </div>
+                <div class="feed__content">
+                  <h3 class="feed__title">Uploaded new BIOS</h3>
+                  <p class="feed__details">
+                    <span>ASUS ROG Maximus Z790</span>
+                    <span>Version 1402</span>
+                  </p>
+
+                  <div class="feed__time">
+                    <i data-lucide="history" class="lucide-icon"></i>
+                    <span>2 hours ago</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="feed__entry comment">
+                <div class="icon-box">
+                  <i data-lucide="message-circle" class="lucide-icon"></i>
+                </div>
+                <div class="feed__content">
+                  <h3 class="feed__title">Uploaded new BIOS</h3>
+                  <p class="feed__details">
+                    <span>ASUS ROG Maximus Z790</span>
+                    <span>Version 1402</span>
+                  </p>
+
+                  <div class="feed__time">
+                    <i data-lucide="history" class="lucide-icon"></i>
+                    <span>2 hours ago</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="feed__entry gamification">
+                <div class="icon-box">
+                  <i data-lucide="star" class="lucide-icon"></i>
+                </div>
+                <div class="feed__content">
+                  <h3 class="feed__title">Uploaded new BIOS</h3>
+                  <p class="feed__details">
+                    <span>ASUS ROG Maximus Z790</span>
+                    <span>Version 1402</span>
+                  </p>
+
+                  <div class="feed__time">
+                    <i data-lucide="history" class="lucide-icon"></i>
+                    <span>2 hours ago</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="feed__entry milestone">
+                <div class="icon-box">
+                  <i data-lucide="milestone" class="lucide-icon"></i>
+                </div>
+                <div class="feed__content">
+                  <h3 class="feed__title">Uploaded new BIOS</h3>
+                  <p class="feed__details">
+                    <span>ASUS ROG Maximus Z790</span>
+                    <span>Version 1402</span>
+                  </p>
+
+                  <div class="feed__time">
+                    <i data-lucide="history" class="lucide-icon"></i>
+                    <span>2 hours ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="dashboard-navigation hidden" data-menu="settings">
             <h1>Settings</h1>
