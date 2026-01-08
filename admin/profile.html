@@ -347,7 +347,7 @@
                   </div>
                 </div>
               </div>
-              <button class="loadmoreactivity">Learn More Activity</button>
+              <button class="loadmoreactivity">Load More Activity</button>
             </div>
           </div>
 
@@ -431,10 +431,186 @@
                   </div>
                 </div>
               </div>
+
+              <button class="loadmoreactivity">Load More Activity</button>
             </div>
           </div>
-          <div class="dashboard-navigation hidden" data-menu="settings">
-            <h1>Settings</h1>
+          <div
+            class="dashboard-navigation profile__settings hidden"
+            data-menu="settings"
+          >
+            <form class="info-settings">
+              <div class="admin-section__header info-settings__header">
+                <h2>Personal Settings</h2>
+                <button id="editProfile" class="edit-profile">Edit</button>
+              </div>
+
+              <div class="input__managers">
+                <div class="admin__form-control">
+                  <label for="fname">Full Name</label>
+                  <div class="input__control">
+                    <i data-lucide="user" class="lucide-icon"></i>
+                    <input
+                      type="text"
+                      id="fname"
+                      name="fname"
+                      autocomplete="name"
+                      placeholder="Separate with space e.g John Doe"
+                      class="form__input"
+                      value="John Doe"
+                      disabled
+                    />
+                  </div>
+                </div>
+                <!-- End Of Form Control -->
+                <div class="admin__form-control">
+                  <label for="email">Email</label>
+                  <div class="input__control">
+                    <i data-lucide="mail" class="lucide-icon"></i>
+                    <input
+                      type="text"
+                      id="email"
+                      name="email"
+                      autocomplete="email"
+                      placeholder="e.g Johndoe@mail.com"
+                      class="form__input"
+                      value="johndoe@mail.com"
+                      disabled
+                    />
+                  </div>
+                </div>
+                <!-- End Of Form Control -->
+                <div class="admin__form-control">
+                  <label for="location">Location</label>
+                  <div class="input__control">
+                    <i data-lucide="map-pin" class="lucide-icon"></i>
+                    <input
+                      type="text"
+                      id="location"
+                      name="location"
+                      autocomplete="country-name"
+                      placeholder="Benin City, Nigeria"
+                      class="form__input"
+                      value="Benin City, Nigeria"
+                      disabled
+                    />
+                  </div>
+                </div>
+                <!-- End Of Form Control -->
+                <div class="admin__form-control">
+                  <label for="telephone">Phone Number</label>
+                  <div class="input__control">
+                    <i data-lucide="phone" class="lucide-icon"></i>
+                    <input
+                      type="text"
+                      id="telephone"
+                      name="telephone"
+                      autocomplete="tel-national"
+                      placeholder="+234 813 456 7890"
+                      class="form__input"
+                      value="+234 813 456 7890"
+                      disabled
+                    />
+                  </div>
+                </div>
+                <!-- End Of Form Control -->
+                <div class="admin__form-control">
+                  <label for="website">Website</label>
+                  <div class="input__control">
+                    <i data-lucide="globe" class="lucide-icon"></i>
+                    <input
+                      type="text"
+                      id="website"
+                      name="website"
+                      autocomplete="website"
+                      placeholder="https://example.com"
+                      class="form__input"
+                      value="https://example.com"
+                      disabled
+                    />
+                  </div>
+                </div>
+                <!-- End Of Form Control -->
+                <div class="admin__form-control">
+                  <label for="social-media-gh">Github</label>
+                  <div class="input__control">
+                    <i data-lucide="github" class="lucide-icon"></i>
+                    <input
+                      type="text"
+                      id="social-media-gh"
+                      name="social-media-gh"
+                      autocomplete="website"
+                      placeholder="https://github.com/example"
+                      class="form__input"
+                      value="https://github.com/example"
+                      disabled
+                    />
+                  </div>
+                </div>
+                <!-- End Of Form Control -->
+                <div class="admin__form-control">
+                  <label for="social-media-x">X</label>
+                  <div class="input__control">
+                    <i data-lucide="twitter" class="lucide-icon"></i>
+                    <input
+                      type="text"
+                      id="social-media-x"
+                      name="social-media-x"
+                      autocomplete="website"
+                      placeholder="https://x.com/example"
+                      class="form__input"
+                      value="https://x.com/example"
+                      disabled
+                    />
+                  </div>
+                </div>
+                <!-- End Of Form Control -->
+              </div>
+            </form>
+
+            <div class="acct__settings">
+              <h2>Account Settings</h2>
+
+              <div class="setings__actions">
+                <div class="settings__action email">
+                  <div class="text">
+                    <h3>Email Notifications</h3>
+                    <p>Receive updates about your uploads</p>
+                  </div>
+                  <button class="action" id="toggleEmail"></button>
+                </div>
+                <div class="settings__action notifications">
+                  <div class="text">
+                    <h3>Push Notifications</h3>
+                    <p>Get notified of new comments</p>
+                  </div>
+                  <button class="action"></button>
+                </div>
+                <div class="settings__action profile-visibility">
+                  <div class="text">
+                    <h3>Profile Visibility</h3>
+                    <p>Make your profile visible to others</p>
+                  </div>
+                  <button class="action"></button>
+                </div>
+              </div>
+
+              <div class="settings__security">
+                <h3>Security</h3>
+
+                <div class="security__actions">
+                  <button class="security__btn action-psw">
+                    <i data-lucide="lock" class="lucide-icon"></i>
+                    <span>Change Password</span>
+                  </button>
+
+                  <button class="security__btn action-2fa">
+                    <i data-lucide="lock" class="lucide-icon"></i>
+                    <span>Two-Factor Authentication</span>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
