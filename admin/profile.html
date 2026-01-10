@@ -189,7 +189,7 @@
           </div>
 
           <div
-            class="dashboard-navigation profile-navigation"
+            class="dashboard-navigation profile-navigation hidden"
             data-menu="overview"
           >
             <div class="stats__and__achievements">
@@ -436,7 +436,7 @@
             </div>
           </div>
           <div
-            class="dashboard-navigation profile__settings hidden"
+            class="dashboard-navigation profile__settings"
             data-menu="settings"
           >
             <form class="info-settings">
@@ -577,21 +577,40 @@
                     <h3>Email Notifications</h3>
                     <p>Receive updates about your uploads</p>
                   </div>
-                  <button class="action" id="toggleEmail"></button>
+                  <input type="checkbox" id="toggle" class="peer" hidden />
+                  <label for="toggle" class="switch"></label>
                 </div>
                 <div class="settings__action notifications">
                   <div class="text">
                     <h3>Push Notifications</h3>
                     <p>Get notified of new comments</p>
                   </div>
-                  <button class="action"></button>
+
+                  <input
+                    type="checkbox"
+                    id="notifications-toggle"
+                    class="notifications-toggle"
+                    hidden
+                  />
+                  <label
+                    for="notifications-toggle"
+                    class="notifications-switch"
+                  ></label>
                 </div>
+
                 <div class="settings__action profile-visibility">
                   <div class="text">
                     <h3>Profile Visibility</h3>
                     <p>Make your profile visible to others</p>
                   </div>
-                  <button class="action"></button>
+
+                  <input
+                    type="checkbox"
+                    id="profile-toggle"
+                    class="profile-toggle"
+                    hidden
+                  />
+                  <label for="profile-toggle" class="profile-switch"></label>
                 </div>
               </div>
 
